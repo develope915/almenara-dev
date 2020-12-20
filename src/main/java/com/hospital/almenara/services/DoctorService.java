@@ -1,19 +1,35 @@
 package com.hospital.almenara.services;
 
 import com.hospital.almenara.entity.Doctor;
+import com.hospital.almenara.entity.Team;
+import com.hospital.almenara.entity.Tipos;
 import com.hospital.almenara.repository.DoctorRepository;
 import com.hospital.almenara.view.pdf.DoctorPdf;
+
+import dto.DoctoresGruposDTO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.hospital.almenara.repository.TipoRepository;
+import com.hospital.almenara.repository.TeamRepository;
+
 import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DoctorService {
 
     @Autowired
     DoctorRepository repository;
+    
+    @Autowired
+    TipoRepository tiporepository;
+    
+    @Autowired
+    TeamRepository teamrepository;
 
     public List<Doctor> findAll(){
         return repository.findAll();
@@ -30,6 +46,7 @@ public class DoctorService {
     public List<Doctor> findAllByTeamId(Long teamId){
         return repository.findAllByTeamId(teamId);
     }
+ 
 
     public Doctor update(Doctor doctor, Long id){
         Doctor updObj = findById(id);
@@ -58,4 +75,30 @@ public class DoctorService {
         DoctorPdf studentPdf = new DoctorPdf();
         return studentPdf.getListDoctors(doctors);
     }
+
+	public List<DoctoresGruposDTO> findAllByTeamIdCategoria(Long teamId, Long categoria) {
+		
+		  List<Team> team = new ArrayList<Team>();
+		  List<Doctor> doctorlst  = new ArrayList<Doctor>();
+		  List<DoctoresGruposDTO> lstgrupos = new ArrayList<DoctoresGruposDTO>();
+		  
+		  Tipos categoriaBean =  tiporepository.getOne(categoria);
+
+		  team = teamrepository.findAllByTipoId(categoria);
+		  
+		  for (Team team2 : team) {
+			  DoctoresGruposDTO grupos = new DoctoresGruposDTO();  
+			  grupos.setIdCategoria(categoria);
+			  grupos.setCategoria(categoriaBean.getName());
+			  grupos.setIdGrupo(team2.getId());
+			  grupos.setNombreGrupo(team2.getName());
+			  
+			  doctorlst = repository.findAllByTeamId(team2.getId());
+			  grupos.getGrupo().add(doctorlst);
+			  
+			  lstgrupos.add(grupos);
+		  }
+			
+		  return lstgrupos;
+	}
 }

@@ -2,6 +2,9 @@ package com.hospital.almenara.controller;
 
 import com.hospital.almenara.entity.Doctor;
 import com.hospital.almenara.services.DoctorService;
+
+import dto.DoctoresGruposDTO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -48,6 +51,12 @@ public class DoctorController {
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<List<Doctor>> findByTeamId(@PathVariable Long teamId){
         return ResponseEntity.status(HttpStatus.OK).body(service.findAllByTeamId(teamId));
+    }
+    
+    @GetMapping("/teamIdCategoria/{teamId}/{categoria}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<List<DoctoresGruposDTO>> findByTeamIdCategoria(@PathVariable Long teamId, @PathVariable Long categoria){
+        return ResponseEntity.status(HttpStatus.OK).body(service.findAllByTeamIdCategoria(teamId, categoria));
     }
 
     @GetMapping("/pdf")
