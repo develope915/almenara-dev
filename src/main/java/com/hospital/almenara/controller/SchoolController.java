@@ -36,9 +36,5 @@ public class SchoolController {
         return ResponseEntity.status(HttpStatus.CREATED).body(service.create(school));
     }
 
-    @PutMapping("/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<School> create(@RequestBody School school, @PathVariable Long id){
-        return ResponseEntity.status(HttpStatus.CREATED).body(service.update(school, id));
-    }
+ 
 }
