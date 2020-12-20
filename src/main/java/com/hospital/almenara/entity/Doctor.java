@@ -1,5 +1,6 @@
 package com.hospital.almenara.entity;
 
+import com.sun.istack.Nullable;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -31,7 +32,7 @@ public class Doctor implements Serializable {
     @ManyToOne
     private Specialty specialty;
     private Boolean status;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Team team;
     @ManyToOne
     private Nivel nivel;

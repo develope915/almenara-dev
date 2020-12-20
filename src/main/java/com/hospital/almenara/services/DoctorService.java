@@ -48,7 +48,7 @@ public class DoctorService {
         if (doctor.getEmail() != null) updObj.setEmail(doctor.getEmail());
         if (doctor.getPhone() != null) updObj.setPhone(doctor.getPhone());
         if (doctor.getStatus() != null) updObj.setStatus(doctor.getStatus());
-        if (doctor.getTeam() != null) updObj.setTeam(doctor.getTeam());
+        // if (doctor.getTeam() != null) updObj.setTeam(doctor.getTeam());
         if (doctor.getNivel() != null) updObj.setNivel(doctor.getNivel());
         return repository.save(updObj);
     }
