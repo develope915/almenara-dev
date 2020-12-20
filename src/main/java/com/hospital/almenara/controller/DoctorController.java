@@ -3,7 +3,7 @@ package com.hospital.almenara.controller;
 import com.hospital.almenara.entity.Doctor;
 import com.hospital.almenara.services.DoctorService;
 
-import dto.DoctoresGruposDTO;
+import com.hospital.almenara.dto.DoctoresGruposDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

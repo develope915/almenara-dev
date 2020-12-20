@@ -133,16 +133,16 @@ insert into campus(name) values('HNGAI')
 insert into tipos(name, estado) values('Medicina', 'A');
 insert into tipos(name, estado) values('Cirugía', 'A');
 
-insert into team(name, tipo) values('01', '1');
-insert into team(name, tipo) values('02', '1');
-insert into team(name, tipo) values('03', '1');
-insert into team(name, tipo) values('04', '1');
-insert into team(name, tipo) values('05', '1');
-insert into team(name, tipo) values('06', '1');
-insert into team(name, tipo) values('07', '1');
-insert into team(name, tipo) values('08', '1');
-insert into team(name, tipo) values('09', '2');
-insert into team(name, tipo) values('10', '2');
+insert into team(name, tipo) values('01', 1);
+insert into team(name, tipo) values('02', 1);
+insert into team(name, tipo) values('03', 1);
+insert into team(name, tipo) values('04', 1);
+insert into team(name, tipo) values('05', 1);
+insert into team(name, tipo) values('06', 1);
+insert into team(name, tipo) values('07', 1);
+insert into team(name, tipo) values('08', 1);
+insert into team(name, tipo) values('09', 2);
+insert into team(name, tipo) values('10', 2);
 
 insert into nivel(name) values ('R1')
 insert into nivel(name) values ('R2')

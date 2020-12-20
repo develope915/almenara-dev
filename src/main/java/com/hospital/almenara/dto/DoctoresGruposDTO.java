@@ -1,4 +1,4 @@
-package dto;
+package com.hospital.almenara.dto;
 import com.hospital.almenara.entity.Doctor;
 
 import java.util.List;

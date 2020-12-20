@@ -6,7 +6,7 @@ import com.hospital.almenara.entity.Tipos;
 import com.hospital.almenara.repository.DoctorRepository;
 import com.hospital.almenara.view.pdf.DoctorPdf;
 
-import dto.DoctoresGruposDTO;
+import com.hospital.almenara.dto.DoctoresGruposDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
