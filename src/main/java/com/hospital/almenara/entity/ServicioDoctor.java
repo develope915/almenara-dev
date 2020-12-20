@@ -7,9 +7,8 @@ import java.util.List;
 
 @Entity
 @Data
-public class ServicioDoctor {
-
-    @Id
+public class ServicioDoctor
+{   @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne

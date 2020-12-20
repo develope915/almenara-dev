@@ -2,6 +2,7 @@ package com.hospital.almenara.entity;
 
 import com.sun.istack.Nullable;
 import lombok.Data;
+import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,6 +15,7 @@ public class Doctor implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    // @UniqueElements(message = "Ya se ha registrado el documento")
     private String document;
     private String name;
     private String paternalSurname;
@@ -24,6 +26,7 @@ public class Doctor implements Serializable {
     private Campus campus;
     private LocalDate birthDate;
     private String address;
+    // @UniqueElements(message = "Ya se ha registrado el CMP")
     private String cmp;
     private String email;
     private String phone;

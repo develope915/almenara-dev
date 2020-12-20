@@ -10,4 +10,6 @@ import java.util.List;
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
 
     List<Doctor> findAllByTeamId(Long teamId);
+    List<Doctor> findAllByDocument(String document);
+    List<Doctor> findAllByCmp(String cmp);
 }

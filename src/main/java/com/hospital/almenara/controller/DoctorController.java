@@ -8,9 +8,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.print.Doc;
+import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @CrossOrigin(origins = {"http://localhost:3000", "https://hospital-almenara-control-asistencia.netlify.app"})
 @RestController
@@ -34,7 +39,16 @@ public class DoctorController {
 
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<Doctor> create(@RequestBody Doctor doctor){
+    public ResponseEntity<Doctor> create(/*@Valid*/ @RequestBody Doctor doctor/*, BindingResult result*/){
+        /*if(result.hasErrors())
+        {   Map<String, String> errorMap = result.getFieldErrors()
+                                                 .stream()
+                                                 .collect(
+                                                         Collectors.toMap(
+                                                                 error -> error.getField(),
+                                                                 error -> error.getDefaultMessage()));
+
+        }*/
         return ResponseEntity.status(HttpStatus.CREATED).body(service.create(doctor));
     }
 

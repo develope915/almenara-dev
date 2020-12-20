@@ -31,6 +31,14 @@ public class DoctorService {
         return repository.findAllByTeamId(teamId);
     }
 
+    public List<Doctor> findAllByDocument(String document){
+        return repository.findAllByDocument(document);
+    }
+
+    public List<Doctor> findAllByCmp(String cmp){
+        return repository.findAllByCmp(cmp);
+    }
+
     public Doctor update(Doctor doctor, Long id){
         Doctor updObj = findById(id);
         if (updObj == null) return null;
