@@ -56,7 +56,7 @@ insert into specialty(name) values('Medicina Interna')
 insert into specialty(name) values('Medicina Oncológica')
 insert into specialty(name) values('Psiquiatría')
 insert into specialty(name) values('Gastroenterología')
-insert into specialty(name) values('Cirugía General') --13
+insert into specialty(name) values('Cirugía General')
 insert into specialty(name) values('Cardiología')
 insert into specialty(name) values('Medicina Intensiva')
 insert into specialty(name) values('Medicina Emergencia')

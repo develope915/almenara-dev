@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://localhost:3000", "https://almenara-api.herokuapp.com"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
 @RestController
 @RequestMapping("/periodo")
 public class PeriodoController {

@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@CrossOrigin(origins = {"http://localhost:3000", "https://almenara-api.herokuapp.com"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
