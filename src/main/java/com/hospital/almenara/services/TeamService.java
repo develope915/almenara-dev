@@ -1,5 +1,6 @@
 package com.hospital.almenara.services;
 
+import com.hospital.almenara.entity.Doctor;
 import com.hospital.almenara.entity.Team;
 import com.hospital.almenara.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,5 +16,9 @@ public class TeamService {
 
     public List<Team> findAll(){
         return repository.findAll();
+    }
+
+    public Team findById(Long id){
+        return repository.findById(id).orElse(null);
     }
 }

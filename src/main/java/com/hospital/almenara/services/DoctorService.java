@@ -44,7 +44,7 @@ public class DoctorService {
     }
 
     public List<Doctor> findAllByTeamId(Long teamId){
-        return repository.findAllByTeamId(teamId);
+        return repository.findAllByTeamIdOrderByNivelDesc(teamId);
     }
  
 
@@ -101,12 +101,73 @@ public class DoctorService {
 			  grupos.setIdGrupo(team2.getId());
 			  grupos.setNombreGrupo(team2.getName());
 			  
-			  doctorlst = repository.findAllByTeamId(team2.getId());
-			  grupos.getGrupo().add(doctorlst);
+			  doctorlst = repository.findAllByTeamIdOrderByNivelDesc(team2.getId());
+
+			  grupos.setDoctores(doctorlst);
 			  
 			  lstgrupos.add(grupos);
 		  }
 			
 		  return lstgrupos;
 	}
+
+
+    public List<DoctoresGruposDTO> findAllByTeamIdTodos() {
+
+        List<Team> team = new ArrayList<Team>();
+        List<Doctor> doctorlst  = new ArrayList<Doctor>();
+        List<DoctoresGruposDTO> lstgrupos = new ArrayList<DoctoresGruposDTO>();
+
+
+        team = teamrepository.findAll();
+
+        for (Team team2 : team) {
+            Tipos categoriaBean =  tiporepository.getOne(team2.getTipo().getId());
+            DoctoresGruposDTO grupos = new DoctoresGruposDTO();
+            grupos.setIdCategoria(team2.getTipo().getId());
+            grupos.setCategoria(categoriaBean.getName());
+            grupos.setIdGrupo(team2.getId());
+            grupos.setNombreGrupo(team2.getName());
+
+            doctorlst = repository.findAllByTeamIdOrderByNivelDesc(team2.getId());
+
+            grupos.setDoctores(doctorlst);
+
+            lstgrupos.add(grupos);
+        }
+
+        return lstgrupos;
+    }
+
+    public List<DoctoresGruposDTO> findAllByTeamIdGrupo(Long teamId, Long categoria) {
+
+
+        List<Doctor> doctorlst  = new ArrayList<Doctor>();
+        List<DoctoresGruposDTO> lstgrupos = new ArrayList<DoctoresGruposDTO>();
+
+        Team team = teamrepository.getOne(teamId);
+        Tipos categoriaBean =  tiporepository.getOne(categoria);
+
+            DoctoresGruposDTO grupos = new DoctoresGruposDTO();
+            grupos.setIdCategoria(categoria);
+            grupos.setCategoria(categoriaBean.getName());
+            grupos.setIdGrupo(team.getId());
+            grupos.setNombreGrupo(team.getName());
+
+            doctorlst = repository.findAllByTeamIdOrderByNivelDesc(teamId);
+
+            grupos.setDoctores(doctorlst);
+
+            lstgrupos.add(grupos);
+
+
+        return lstgrupos;
+    }
+
+
+    public List<Tipos> findAllTipos() {
+
+        return tiporepository.findAll();
+    }
+
 }

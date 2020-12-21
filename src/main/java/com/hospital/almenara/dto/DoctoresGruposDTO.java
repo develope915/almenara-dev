@@ -10,14 +10,14 @@ public class DoctoresGruposDTO {
 	String nombreGrupo;
 	Long idGrupo;
 	
-	List<List<Doctor>> grupo;
+	List<Doctor> doctores;
 
-	public List<List<Doctor>> getGrupo() {
-		return grupo;
+	public List<Doctor> getDoctores() {
+		return doctores;
 	}
 
-	public void setGrupo(List<List<Doctor>> grupo) {
-		this.grupo = grupo;
+	public void setDoctores(List<Doctor> doctores) {
+		this.doctores = doctores;
 	}
 
 	public String getCategoria() {

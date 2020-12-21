@@ -9,5 +9,6 @@ import java.util.List;
 @Repository
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
 
-    List<Doctor> findAllByTeamId(Long teamId); 	List<Doctor> findAllByDocument(String document);
+    List<Doctor> findAllByTeamIdOrderByNivelDesc(Long teamId);
+    List<Doctor> findAllByDocument(String document);
     List<Doctor> findAllByCmp(String cmp);}
