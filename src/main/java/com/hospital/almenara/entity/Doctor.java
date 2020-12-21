@@ -6,7 +6,10 @@ import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.Duration;
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
 
 @Entity
 @Data
@@ -39,7 +42,7 @@ public class Doctor implements Serializable {
     private Team team;
     @ManyToOne
     private Nivel nivel;
-
+    private Date registeredAt;
     @PrePersist
     public void prePersist(){
         status = true;

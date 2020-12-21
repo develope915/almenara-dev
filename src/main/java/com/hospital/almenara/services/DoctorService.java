@@ -1,19 +1,41 @@
 package com.hospital.almenara.services;
 
 import com.hospital.almenara.entity.Doctor;
+import com.hospital.almenara.entity.Nivel;
+import com.hospital.almenara.entity.Team;
+import com.hospital.almenara.entity.Tipos;
 import com.hospital.almenara.repository.DoctorRepository;
 import com.hospital.almenara.view.pdf.DoctorPdf;
+
+import com.hospital.almenara.dto.DoctoresGruposDTO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.hospital.almenara.repository.TipoRepository;
+import com.hospital.almenara.repository.TeamRepository;
+
 import java.io.ByteArrayOutputStream;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class DoctorService {
 
     @Autowired
     DoctorRepository repository;
+    
+    @Autowired
+    TipoRepository tiporepository;
+    
+    @Autowired
+    TeamRepository teamrepository;
 
     public List<Doctor> findAll(){
         return repository.findAll();
@@ -28,8 +50,9 @@ public class DoctorService {
     }
 
     public List<Doctor> findAllByTeamId(Long teamId){
-        return repository.findAllByTeamId(teamId);
+        return repository.findAllByTeamIdOrderByNivelDesc(teamId);
     }
+ 
 
     public Doctor findAllByDocument(String document){
         return repository.findByDocument(document);
@@ -58,6 +81,7 @@ public class DoctorService {
         if (doctor.getStatus() != null) updObj.setStatus(doctor.getStatus());
         // if (doctor.getTeam() != null) updObj.setTeam(doctor.getTeam());
         if (doctor.getNivel() != null) updObj.setNivel(doctor.getNivel());
+        if (doctor.getRegisteredAt() != null) updObj.setRegisteredAt(doctor.getRegisteredAt());
         return repository.save(updObj);
     }
 
@@ -65,5 +89,130 @@ public class DoctorService {
         List<Doctor> doctors = findAll();
         DoctorPdf studentPdf = new DoctorPdf();
         return studentPdf.getListDoctors(doctors);
+    }
+
+	public List<DoctoresGruposDTO> findAllByTeamIdCategoria(Long teamId, Long categoria) {
+		
+		  List<Team> team = new ArrayList<Team>();
+		  List<Doctor> doctorlst  = new ArrayList<Doctor>();
+		  List<DoctoresGruposDTO> lstgrupos = new ArrayList<DoctoresGruposDTO>();
+		  
+		  Tipos categoriaBean =  tiporepository.getOne(categoria);
+
+		  team = teamrepository.findAllByTipoId(categoria);
+		  
+		  for (Team team2 : team) {
+			  DoctoresGruposDTO grupos = new DoctoresGruposDTO();  
+			  grupos.setIdCategoria(categoria);
+			  grupos.setCategoria(categoriaBean.getName());
+			  grupos.setIdGrupo(team2.getId());
+			  grupos.setNombreGrupo(team2.getName());
+			  
+			  doctorlst = repository.findAllByTeamIdOrderByNivelDesc(team2.getId());
+
+			  grupos.setDoctores(doctorlst);
+			  
+			  lstgrupos.add(grupos);
+		  }
+			
+		  return lstgrupos;
+	}
+
+    public List<DoctoresGruposDTO> findAllByTeamIdTodos() {
+
+        List<Team> team = new ArrayList<Team>();
+        List<Doctor> doctorlst  = new ArrayList<Doctor>();
+        List<DoctoresGruposDTO> lstgrupos = new ArrayList<DoctoresGruposDTO>();
+
+        team = teamrepository.findAll();
+
+        for (Team team2 : team) {
+            Tipos categoriaBean =  tiporepository.getOne(team2.getTipo().getId());
+            DoctoresGruposDTO grupos = new DoctoresGruposDTO();
+            grupos.setIdCategoria(team2.getTipo().getId());
+            grupos.setCategoria(categoriaBean.getName());
+            grupos.setIdGrupo(team2.getId());
+            grupos.setNombreGrupo(team2.getName());
+
+            doctorlst = repository.findAllByTeamIdOrderByNivelDesc(team2.getId());
+
+            grupos.setDoctores(doctorlst);
+
+            lstgrupos.add(grupos);
+        }
+
+        return lstgrupos;
+    }
+
+    public List<DoctoresGruposDTO> findAllByTeamIdGrupo(Long teamId, Long categoria) {
+
+
+        List<Doctor> doctorlst  = new ArrayList<Doctor>();
+        List<DoctoresGruposDTO> lstgrupos = new ArrayList<DoctoresGruposDTO>();
+
+        Team team = teamrepository.getOne(teamId);
+        Tipos categoriaBean =  tiporepository.getOne(categoria);
+
+            DoctoresGruposDTO grupos = new DoctoresGruposDTO();
+            grupos.setIdCategoria(categoria);
+            grupos.setCategoria(categoriaBean.getName());
+            grupos.setIdGrupo(team.getId());
+            grupos.setNombreGrupo(team.getName());
+
+            doctorlst = repository.findAllByTeamIdOrderByNivelDesc(teamId);
+
+            grupos.setDoctores(doctorlst);
+
+            lstgrupos.add(grupos);
+
+
+        return lstgrupos;
+    }
+
+
+    public List<Tipos> findAllTipos() {
+
+        return tiporepository.findAll();
+    }
+
+    public List<Doctor> upgradeDoctorLevel()
+    {   return repository.findAll().stream()
+                            .map(this::upgradeLevel)
+                            .map(doctor -> repository.save(doctor))
+                            .collect(Collectors.toList());
+    }
+
+    public boolean isAbleToUpgradeLevel(Doctor doctor)
+    {   LocalDate today = LocalDate.now();
+        LocalDate registeredAt = doctor.getRegisteredAt().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        long dayDuration = ChronoUnit.YEARS.between(registeredAt, today);
+        return dayDuration >= 365;
+    }
+
+    public Doctor upgradeLevel(Doctor doctor)
+    {   Long currentLevel = doctor.getNivel().getId();
+        LocalDate today = LocalDate.now();
+        LocalDate registeredAt = doctor.getRegisteredAt().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+        long years = ChronoUnit.YEARS.between(registeredAt, today);
+
+        Nivel newNivel = new Nivel();
+        newNivel.setId(doctor.getNivel().getId());
+
+        if(years == 2)
+        {
+            newNivel.setId(2L);
+        }
+        else if(years == 3)
+        {
+            newNivel.setId(3L);
+        }
+        else if(years >= 4)
+        {
+            doctor.setStatus(false);
+        }
+
+        doctor.setNivel(newNivel);
+        return doctor;
     }
 }
