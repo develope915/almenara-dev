@@ -22,7 +22,7 @@ public class SpecialtyController {
     SpecialtyService service;
 
     @GetMapping
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public ResponseEntity<List<Specialty>> find(){
         return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
     }

@@ -1,7 +1,10 @@
 package com.hospital.almenara.controller;
 
 import com.hospital.almenara.entity.Doctor;
+import com.hospital.almenara.payload.response.MessageResponse;
+import com.hospital.almenara.repository.DoctorRepository;
 import com.hospital.almenara.services.DoctorService;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -15,31 +18,36 @@ import javax.print.Doc;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @CrossOrigin(origins = {"http://localhost:3000", "https://hospital-almenara-control-asistencia.netlify.app"})
 @RestController
 @RequestMapping("/doctors")
+@Log4j2
 public class DoctorController {
 
     @Autowired
     DoctorService service;
 
+    @Autowired
+    DoctorRepository repository;
+
     @GetMapping
-    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
+    //@PreAuthorize("hasAnyRole('ADMIN','USER')")
     public ResponseEntity<List<Doctor>> find() {
         return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
     }
 
     @GetMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<Doctor> finOne(@PathVariable Long id){
+    public ResponseEntity<Doctor> finOne(@PathVariable Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(service.findById(id));
     }
 
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<Doctor> create(/*@Valid*/ @RequestBody Doctor doctor/*, BindingResult result*/){
+    public ResponseEntity<?> create(/*@Valid*/ @RequestBody Doctor doctor/*, BindingResult result*/) {
         /*if(result.hasErrors())
         {   Map<String, String> errorMap = result.getFieldErrors()
                                                  .stream()
@@ -49,13 +57,19 @@ public class DoctorController {
                                                                  error -> error.getDefaultMessage()));
 
         }*/
-        return ResponseEntity.status(HttpStatus.CREATED).body(service.create(doctor));
+        if (repository.existsByDocument(doctor.getDocument())) {
+            return ResponseEntity.badRequest().body(new MessageResponse(doctor.getDocument() + " ya se encuentra registrado. Ingresa otro Nro. Documento."));
+        } else if (repository.existsByCmp(doctor.getCmp())) {
+            return ResponseEntity.badRequest().body(new MessageResponse(doctor.getCmp() + " ya se encuentra registrado. Ingresa otro CMP."));
+        } else {
+            return ResponseEntity.status(HttpStatus.CREATED).body(service.create(doctor));
+        }
     }
 
     @PutMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<Doctor> update(@RequestBody Doctor doctor, @PathVariable Long id){
-        return ResponseEntity.status(HttpStatus.CREATED).body(service.update(doctor, id));
+    public ResponseEntity<?> update(@RequestBody Doctor doctor, @PathVariable Long id)
+    {   return ResponseEntity.status(HttpStatus.CREATED).body(service.update(doctor, id));
     }
 
     @GetMapping("/teamId/{teamId}")
