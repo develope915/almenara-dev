@@ -1,5 +1,6 @@
 package com.hospital.almenara.services;
 
+import com.hospital.almenara.entity.Team;
 import com.hospital.almenara.entity.Tipos;
 import com.hospital.almenara.repository.TipoRepository;
 
@@ -17,4 +18,11 @@ public class TipoService {
     public List<Tipos> findAll(){
         return repository.findAll();
     }
+
+
+    public Tipos findById(Long id){
+        return repository.findById(id).orElse(null);
+    }
+
+
 }
