@@ -2,6 +2,7 @@ INSERT INTO role(name) values('ROLE_ADMIN')
 INSERT INTO role(name) values('ROLE_USER')
 
 insert into user(username,password,name,last_name,status) values('andony','$2a$10$V4PPljRqDQCNVay7jYxmx.xtwV6IxR1bQbkuItyIAKSpcy1b1y2Ce','Aimar Andony', 'Berrocal Coaquira', 1)
+insert into user(username,password,name,last_name,status) values('jose','$2a$10$f0FxMfS80Po89Sn/y8RFAOZ5TKeG36hRULXCrPMymw8JgXVuYVvdm','Jose', 'Alvino', 1)
 insert into user(username,password,name,last_name,status) values('murillo','$2a$10$f0FxMfS80Po89Sn/y8RFAOZ5TKeG36hRULXCrPMymw8JgXVuYVvdm','Oscar David', 'Murillo Briceño', 1)
 
 insert into user_roles values(1,1)

@@ -17,6 +17,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -68,6 +69,17 @@ public class DoctorController {
         } else {
             return ResponseEntity.status(HttpStatus.CREATED).body(service.create(doctor));
         }
+    }
+
+
+
+    @PostMapping(value = "/import/doctor")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<?> saveImportedDoctors(@RequestBody List<Doctor> lstDoctor)
+    {
+        log.info(lstDoctor.toString());
+        lstDoctor.stream().forEach(d -> repository.save(d));
+        return ResponseEntity.status(HttpStatus.OK).body(lstDoctor);
     }
 
     @PutMapping("/{id}")
@@ -152,4 +164,5 @@ public class DoctorController {
     {
         return ResponseEntity.status(HttpStatus.OK).body(service.upgradeDoctorLevel());
     }
+
 }
