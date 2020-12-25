@@ -13,6 +13,8 @@ public class SchoolAgreementService {
 
     @Autowired
     SchoolAgreementRepository repository;
+    @Autowired
+    SchoolAgreementRepository schoolAgreementRepository;
 
     public List<SchoolAgreement> findAll(){
         return repository.findAll();
@@ -36,5 +38,10 @@ public class SchoolAgreementService {
         if (schoolAgreement.getExpiration() != null) updObj.setExpiration(schoolAgreement.getExpiration());
         repository.save(updObj);
         return updObj;
+    }
+
+    public SchoolAgreement getSchoolAgreementBySchoolShortName(String shortName)
+    {
+        return schoolAgreementRepository.findBySchoolShortName(shortName);
     }
 }

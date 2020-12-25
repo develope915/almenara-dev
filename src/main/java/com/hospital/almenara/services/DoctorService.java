@@ -1,9 +1,6 @@
 package com.hospital.almenara.services;
 
-import com.hospital.almenara.entity.Doctor;
-import com.hospital.almenara.entity.Nivel;
-import com.hospital.almenara.entity.Team;
-import com.hospital.almenara.entity.Tipos;
+import com.hospital.almenara.entity.*;
 import com.hospital.almenara.repository.DoctorRepository;
 import com.hospital.almenara.view.pdf.DoctorPdf;
 

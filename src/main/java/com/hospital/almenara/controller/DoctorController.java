@@ -1,9 +1,11 @@
 package com.hospital.almenara.controller;
 
 import com.hospital.almenara.entity.Doctor;
+import com.hospital.almenara.entity.SchoolAgreement;
 import com.hospital.almenara.payload.response.MessageResponse;
 import com.hospital.almenara.repository.DoctorRepository;
 import com.hospital.almenara.services.DoctorService;
+import com.hospital.almenara.services.SchoolAgreementService;
 import lombok.extern.log4j.Log4j2;
 
 import com.hospital.almenara.entity.Team;
@@ -30,6 +32,9 @@ public class DoctorController {
 
     @Autowired
     DoctorService service;
+
+    @Autowired
+    SchoolAgreementService schoolAgreementService;
 
     @Autowired
     DoctorRepository repository;
@@ -78,7 +83,12 @@ public class DoctorController {
     public ResponseEntity<?> saveImportedDoctors(@RequestBody List<Doctor> lstDoctor)
     {
         log.info(lstDoctor.toString());
-        lstDoctor.stream().forEach(d -> repository.save(d));
+        lstDoctor.stream().forEach(d -> {
+            SchoolAgreement schoolAgreement = schoolAgreementService.getSchoolAgreementBySchoolShortName(d.getSchoolAgreement().getSchool().getShortName());
+            log.info(schoolAgreement.getSchool().toString());
+            d.setSchoolAgreement(schoolAgreement);
+            repository.save(d);
+        });
         return ResponseEntity.status(HttpStatus.OK).body(lstDoctor);
     }
 
