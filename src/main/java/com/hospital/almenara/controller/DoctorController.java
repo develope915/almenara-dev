@@ -87,7 +87,7 @@ public class DoctorController {
             SchoolAgreement schoolAgreement = schoolAgreementService.getSchoolAgreementBySchoolShortName(d.getSchoolAgreement().getSchool().getShortName());
             log.info(schoolAgreement.getSchool().toString());
             d.setSchoolAgreement(schoolAgreement);
-            repository.save(d);
+            service.create(d);
         });
         return ResponseEntity.status(HttpStatus.OK).body(lstDoctor);
     }

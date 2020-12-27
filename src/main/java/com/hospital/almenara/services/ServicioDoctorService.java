@@ -15,6 +15,11 @@ public class ServicioDoctorService {
     @Autowired
     ServicioDoctorRepository repository;
 
+    public ServicioDoctor create(ServicioDoctor servicioDoctor)
+    {
+        return repository.save(servicioDoctor);
+    }
+
     public List<ServicioDoctor> findAll(){
         return repository.findAll();
     }

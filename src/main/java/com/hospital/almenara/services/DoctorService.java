@@ -12,14 +12,14 @@ import org.springframework.stereotype.Service;
 import com.hospital.almenara.repository.TipoRepository;
 import com.hospital.almenara.repository.TeamRepository;
 
+import javax.print.Doc;
 import java.io.ByteArrayOutputStream;
 import java.time.Duration;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -34,6 +34,21 @@ public class DoctorService {
     @Autowired
     TeamRepository teamrepository;
 
+    @Autowired
+    ServicioDoctorService servicioDoctorService;
+
+    @Autowired
+    PeriodoService periodoService;
+
+    @Autowired
+    AnioAcademicoService anioAcademicoService;
+
+    @Autowired
+    AnioAcademicoDelegadoService anioAcademicoDelegadoService;
+
+    @Autowired
+    ServicioDelegadoService servicioDelegadoService;
+
     public List<Doctor> findAll(){
         return repository.findAll();
     }
@@ -43,7 +58,9 @@ public class DoctorService {
     }
 
     public Doctor create(Doctor doctor){
-        return repository.save(doctor);
+        Doctor createdDoctor = repository.save(doctor);
+        //ServicioDoctor initialServDoctor = this.initializeServiceDoctor(createdDoctor);
+        return createdDoctor;
     }
 
     public List<Doctor> findAllByTeamId(Long teamId){
@@ -211,5 +228,32 @@ public class DoctorService {
 
         doctor.setNivel(newNivel);
         return doctor;
+    }
+
+    public ServicioDoctor initializeServiceDoctor(Doctor doctor)
+    {
+        Calendar calendar = new GregorianCalendar();
+        calendar.setTime(doctor.getRegisteredAt());
+        int initializeAnio                          = calendar.get(Calendar.YEAR);
+        ServicioDoctor initializeServicioDoctor     = new ServicioDoctor();
+        Periodo initializePeriodo                   = periodoService.findByAnioInicio(initializeAnio+"");
+        List<ServicioDelegado> initServicioDelegado = servicioDelegadoService.initializeServicioDelegado();
+        List<AnioAcademico> initAnioAcade           = anioAcademicoService.generateAniosAcademicos(initializeAnio);
+
+        List<AnioAcademicoDelegado> initAniAcademDelegado =  initAnioAcade.stream()
+                                                                    .map(anioAcademico -> {
+                                                                            List<ServicioDelegado> servicioDelegados = servicioDelegadoService.createList(initServicioDelegado);
+                                                                            return new AnioAcademicoDelegado(anioAcademico, servicioDelegados);
+                                                                        //return new AnioAcademicoDelegado(anioAcademico, initServicioDelegado);
+                                                                        })
+                                                                    .map(anioAcademicoDelegado ->
+                                                                            anioAcademicoDelegadoService.create(anioAcademicoDelegado))
+                                                                    .collect(Collectors.toList());
+
+        initializeServicioDoctor.setDoctor(doctor);
+        initializeServicioDoctor.setPeriodo(initializePeriodo);
+        initializeServicioDoctor.setAnioAcademicoDelegados(initAniAcademDelegado);
+
+        return servicioDoctorService.create(initializeServicioDoctor);
     }
 }

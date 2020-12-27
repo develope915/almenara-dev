@@ -9,6 +9,8 @@ insert into user_roles values(1,1)
 insert into user_roles values(1,2)
 insert into user_roles values(2,1)
 insert into user_roles values(2,2)
+insert into user_roles values(3,1)
+insert into user_roles values(3,2)
 
 insert into city(name) values('AREQUIPA')
 insert into city(name) values('CAJAMARCA')

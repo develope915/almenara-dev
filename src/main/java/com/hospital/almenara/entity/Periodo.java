@@ -7,8 +7,8 @@ import java.util.List;
 
 @Entity
 @Data
-public class Periodo {
-
+public class Periodo
+{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

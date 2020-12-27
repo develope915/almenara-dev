@@ -3,10 +3,8 @@ package com.hospital.almenara.controller;
 import com.hospital.almenara.entity.ServicioDelegado;
 import com.hospital.almenara.repository.ServicioDelegadoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,5 +19,12 @@ public class ServicioDelegadoController {
     @GetMapping
     public List<ServicioDelegado> find(){
         return repository.findAll();
+    }
+
+    @PutMapping
+    @PreAuthorize("hasRole('ADMIN')")
+    public ServicioDelegado update(@RequestBody ServicioDelegado servicioDelegado)
+    {
+        return repository.save(servicioDelegado);
     }
 }
