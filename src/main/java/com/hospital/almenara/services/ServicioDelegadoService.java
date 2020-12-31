@@ -32,7 +32,8 @@ public class ServicioDelegadoService
         // Generando el listado de Servicios Delegados con solo el mes seteado
         iniListServDele = meses.stream()
                                .map(mes -> new ServicioDelegado(mes))
-                               .collect(Collectors.toList());
+                               .collect(Collectors.toList())
+                                ;
 
         return iniListServDele;
     }

@@ -59,7 +59,7 @@ public class DoctorService {
 
     public Doctor create(Doctor doctor){
         Doctor createdDoctor = repository.save(doctor);
-        //ServicioDoctor initialServDoctor = this.initializeServiceDoctor(createdDoctor);
+        ServicioDoctor initialServDoctor = this.initializeServiceDoctor(createdDoctor);
         return createdDoctor;
     }
 
@@ -237,13 +237,23 @@ public class DoctorService {
         int initializeAnio                          = calendar.get(Calendar.YEAR);
         ServicioDoctor initializeServicioDoctor     = new ServicioDoctor();
         Periodo initializePeriodo                   = periodoService.findByAnioInicio(initializeAnio+"");
+
         List<ServicioDelegado> initServicioDelegado = servicioDelegadoService.initializeServicioDelegado();
+
+        Map<Integer, List<ServicioDelegado>> initServiciosDelegados = new HashMap<>();
+
+        initServiciosDelegados.put(initializeAnio, servicioDelegadoService.createList(servicioDelegadoService.initializeServicioDelegado()));
+        initServiciosDelegados.put(initializeAnio+1, servicioDelegadoService.createList(servicioDelegadoService.initializeServicioDelegado()));
+        initServiciosDelegados.put(initializeAnio+2, servicioDelegadoService.createList(servicioDelegadoService.initializeServicioDelegado()));
+
         List<AnioAcademico> initAnioAcade           = anioAcademicoService.generateAniosAcademicos(initializeAnio);
 
         List<AnioAcademicoDelegado> initAniAcademDelegado =  initAnioAcade.stream()
                                                                     .map(anioAcademico -> {
-                                                                            List<ServicioDelegado> servicioDelegados = servicioDelegadoService.createList(initServicioDelegado);
-                                                                            return new AnioAcademicoDelegado(anioAcademico, servicioDelegados);
+                                                                            AnioAcademicoDelegado anioAcademicoDelegado = new AnioAcademicoDelegado();
+                                                                            anioAcademicoDelegado.setAnioAcademico(anioAcademico);
+                                                                            anioAcademicoDelegado.setServicioDelegados(initServiciosDelegados.get(Integer.parseInt(anioAcademico.getAnioInicio())));
+                                                                            return anioAcademicoDelegado;
                                                                         //return new AnioAcademicoDelegado(anioAcademico, initServicioDelegado);
                                                                         })
                                                                     .map(anioAcademicoDelegado ->

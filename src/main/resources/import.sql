@@ -66,6 +66,14 @@ insert into specialty(name) values('Medicina Emergencia')
 insert into specialty(name) values('Neumología')
 insert into specialty(name) values('Otorrinología')
 
+--Añadiendo specialties
+insert into specialty(name) values('Dermatologia')
+insert into specialty(name) values('Endicronologia')
+insert into specialty(name) values('Geriatria')
+insert into specialty(name) values('Pediatria')
+insert into specialty(name) values('Neotología')
+insert into specialty(name) values('Medicina Ocupacional y del Medio Ambiente')
+
 insert into servicio(name) values('Vacaciones')
 
 insert into servicio(name) values('SUrología01')
@@ -86,6 +94,18 @@ insert into servicio(name) values('SCirugiaGeneral06')
 insert into servicio(name) values('SCirugiaGeneral07')
 insert into servicio(name) values('SCirugiaGeneral08')
 
+insert into servicio(name) values('SMedicinaInterna01')
+insert into servicio(name) values('SMedicinaInterna02')
+insert into servicio(name) values('SMedicinaInterna03')
+insert into servicio(name) values('SMedicinaInterna04')
+insert into servicio(name) values('SMedicinaInterna05')
+insert into servicio(name) values('SMedicinaInterna06')
+insert into servicio(name) values('SMedicinaInterna07')
+insert into servicio(name) values('SMedicinaInterna08')
+
+--
+-- Urología
+--
 insert into servicio(name) values('SMedicinaInterna01')
 insert into servicio(name) values('SMedicinaInterna02')
 insert into servicio(name) values('SMedicinaInterna03')

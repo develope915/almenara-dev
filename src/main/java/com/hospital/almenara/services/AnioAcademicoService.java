@@ -22,7 +22,9 @@ public class AnioAcademicoService
 
         // Generando Anios
         generatedAniosAcademicos = IntStream.rangeClosed(initAnio, endAnio)
-                            .mapToObj(anio -> anioAcademicoRepository.findByAnioInicio(anio+""))
+                            .mapToObj(anio -> {
+                                return anioAcademicoRepository.findByAnioInicio(anio + "");
+                            })
                             .collect(Collectors.toList());
 
         return generatedAniosAcademicos;
