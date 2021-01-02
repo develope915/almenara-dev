@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ServicioDoctorRepository extends JpaRepository<ServicioDoctor, Long> {
-    
+public interface ServicioDoctorRepository extends JpaRepository<ServicioDoctor, Long>
+{
     List<ServicioDoctor> findAllByDoctorSpecialtyId(Long specialtyId);
 }

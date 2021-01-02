@@ -13,8 +13,7 @@ public class SchoolAgreementService {
 
     @Autowired
     SchoolAgreementRepository repository;
-    @Autowired
-    SchoolAgreementRepository schoolAgreementRepository;
+
 
     public List<SchoolAgreement> findAll(){
         return repository.findAll();
@@ -42,6 +41,11 @@ public class SchoolAgreementService {
 
     public SchoolAgreement getSchoolAgreementBySchoolShortName(String shortName)
     {
-        return schoolAgreementRepository.findBySchoolShortName(shortName);
+        return repository.findBySchoolShortName(shortName);
+    }
+
+    public boolean existsByShortName(String shortName)
+    {
+        return repository.existsBySchoolShortName(shortName);
     }
 }

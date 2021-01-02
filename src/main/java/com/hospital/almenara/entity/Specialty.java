@@ -13,6 +13,7 @@ public class Specialty {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private int state;
     @ManyToMany
     private List<Servicio> servicios;
 }

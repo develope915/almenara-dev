@@ -1,18 +1,19 @@
 package com.hospital.almenara.services;
 
 import com.hospital.almenara.entity.AnioAcademico;
-import com.hospital.almenara.entity.AnioAcademicoDelegado;
 import com.hospital.almenara.repository.AnioAcademicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Service
 public class AnioAcademicoService
-{   @Autowired
+{
+    @Autowired
     AnioAcademicoRepository anioAcademicoRepository;
 
     public List<AnioAcademico> generateAniosAcademicos(int initAnio)
@@ -28,5 +29,15 @@ public class AnioAcademicoService
                             .collect(Collectors.toList());
 
         return generatedAniosAcademicos;
+    }
+
+    public List<AnioAcademico> findAll()
+    {
+        return anioAcademicoRepository.findAll();
+    }
+
+    public Optional<AnioAcademico> findById(Long id)
+    {
+        return anioAcademicoRepository.findById(id);
     }
 }

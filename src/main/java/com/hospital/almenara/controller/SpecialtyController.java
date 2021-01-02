@@ -24,6 +24,6 @@ public class SpecialtyController {
     @GetMapping
     //@PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public ResponseEntity<List<Specialty>> find(){
-        return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
+        return ResponseEntity.status(HttpStatus.OK).body(service.findAllActive());
     }
 }

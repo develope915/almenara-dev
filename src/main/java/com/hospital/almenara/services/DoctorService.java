@@ -49,6 +49,18 @@ public class DoctorService {
     @Autowired
     ServicioDelegadoService servicioDelegadoService;
 
+    @Autowired
+    CampusService campusService;
+
+    @Autowired
+    PlazaService plazaService;
+
+    @Autowired
+    SchoolAgreementService schoolAgreementService;
+
+    @Autowired
+    SpecialtyService specialtyService;
+
     public List<Doctor> findAll(){
         return repository.findAll();
     }
@@ -57,7 +69,8 @@ public class DoctorService {
         return repository.findById(id).orElse(null);
     }
 
-    public Doctor create(Doctor doctor){
+    public Doctor create(Doctor doctor)
+    {
         Doctor createdDoctor = repository.save(doctor);
         ServicioDoctor initialServDoctor = this.initializeServiceDoctor(createdDoctor);
         return createdDoctor;
@@ -265,5 +278,23 @@ public class DoctorService {
         initializeServicioDoctor.setAnioAcademicoDelegados(initAniAcademDelegado);
 
         return servicioDoctorService.create(initializeServicioDoctor);
+    }
+
+    public boolean validateDoctor(Doctor doctorToSave)
+    {
+        // validate plaza
+        if(!plazaService.existsById(doctorToSave.getPlaza().getId()))
+            return false;
+        // validate campus
+        if(!campusService.existsById(doctorToSave.getCampus().getId()))
+            return false;
+        // validate school agreement
+        if(schoolAgreementService.existsByShortName(doctorToSave.getSchoolAgreement().getSchool().getShortName()))
+            return false;
+        // validate speciality
+        if(!specialtyService.existsById(doctorToSave.getSpecialty().getId()));
+        // validate registeredAt
+
+        return true;
     }
 }
