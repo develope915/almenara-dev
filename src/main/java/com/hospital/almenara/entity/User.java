@@ -1,6 +1,7 @@
 package com.hospital.almenara.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -18,7 +19,11 @@ public class User {
     private String name;
     private String lastName;
     private Boolean status;
-    @ManyToMany
+    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST,CascadeType.REFRESH})
+    @JoinTable(name="userRoles",
+               joinColumns = @JoinColumn(name = "user_id"),
+               inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
     private Set<Role> roles = new HashSet<>();
 
     @PrePersist
@@ -35,4 +40,5 @@ public class User {
         this.name = name;
         this.lastName = lastName;
     }
+
 }

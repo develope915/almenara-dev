@@ -38,11 +38,11 @@ public class ServicioDoctorController
         return service.findAllByServiceIdAndPeriod(idServicio, idAnio);
     }
 
-    @GetMapping("/{idService}")
-    public List<ServicioDoctor> findByServiceId(@PathVariable Long idService)
-    {
-        return service.findAllBySpecialty(idService);
-    }
+//    @GetMapping("/{idService}")
+//    public List<ServicioDoctor> findByServiceId(@PathVariable Long idService)
+//    {
+//        return service.findAllBySpecialty(idService);
+//    }
 
     @GetMapping("/pdf")
     public ResponseEntity<byte[]> getListServicioDoctorPdf() {
