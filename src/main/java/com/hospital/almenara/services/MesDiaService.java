@@ -1,6 +1,7 @@
 package com.hospital.almenara.services;
 
 import com.hospital.almenara.entity.AnioAcademico;
+import com.hospital.almenara.entity.Doctor;
 import com.hospital.almenara.entity.Mes;
 import com.hospital.almenara.entity.MesDia;
 import com.hospital.almenara.repository.AnioAcademicoRepository;
@@ -41,13 +42,10 @@ public class MesDiaService
         }
 
         if(mes > -5){
-
-
             if(listadoFinal.size() > 0){
                 listado = listadoFinal;
                 listadoFinal = new ArrayList<MesDia>();
             }
-
 
             for (MesDia mesDiaObj : listado) {
                 if(mesDiaObj.getIdMes() != null){
@@ -60,4 +58,17 @@ public class MesDiaService
 
         return listadoFinal;
     }
+
+
+    public MesDia findById(Long id){
+        return mesDiaRepository.findById(id).orElse(null);
+    }
+
+
+    public MesDia update(MesDia doctor, Long id){
+
+        return mesDiaRepository.save(doctor);
+    }
+
+
 }
