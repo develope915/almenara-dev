@@ -3,10 +3,7 @@ package com.hospital.almenara.entity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -21,4 +18,8 @@ public class AnioAcademico {
     private String anioFinal;
     private String mesInicio;
     private String mesFinal;
+
+    private Long mesInicioNum;
+    private Long mesFinalNum;
+
 }
