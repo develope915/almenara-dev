@@ -74,12 +74,13 @@ public class MesDiaService
     public MesDia validar(MesDia mesdia){
 
         List<MesDia> lstObjEncontrado = mesDiaRepository.findByIdDiaAndIdMesAndAnio(mesdia.getIdDia() + 1 , mesdia.getIdMes(), mesdia.getAnio());
+        Long tipoGuardiaValidar = mesdia.getTeam().getId() == 1L ? 2L : 1L;
 
         if(lstObjEncontrado.size() > 0){
             for (MesDia bean : lstObjEncontrado) {
                         System.out.println(bean.getTiposGuardia().getId());
                         System.out.println(mesdia.getTiposGuardia().getId());
-                if(bean.getTiposGuardia().getId() == mesdia.getTiposGuardia().getId() ){
+                if(bean.getTiposGuardia().getId() == tipoGuardiaValidar && bean.getTeam().getTipo().getId() == mesdia.getTeam().getTipo().getId()){
                                 System.out.println(bean.getTeam().getId());
                                 System.out.println(mesdia.getTeam().getId());
                         if(bean.getTeam().getId() == mesdia.getTeam().getId()) {
@@ -104,7 +105,7 @@ public class MesDiaService
             for (MesDia bean : lstObjEncontrado) {
                 System.out.println(bean.getTiposGuardia().getId());
                 System.out.println(mesdia.getTiposGuardia().getId());
-                if(bean.getTiposGuardia().getId() != mesdia.getTiposGuardia().getId() ){
+                if(bean.getTiposGuardia().getId() != mesdia.getTiposGuardia().getId() && bean.getTeam().getTipo().getId() == mesdia.getTeam().getTipo().getId()){
                     System.out.println(bean.getTeam().getId());
                     System.out.println(mesdia.getTeam().getId());
                     if(bean.getTeam().getId() == mesdia.getTeam().getId()) {
@@ -120,6 +121,29 @@ public class MesDiaService
         return null;
     }
 
+    public MesDia validar3(MesDia mesdia){
+
+        List<MesDia> lstObjEncontrado = mesDiaRepository.findByIdDiaAndIdMesAndAnio(mesdia.getIdDia() - 1, mesdia.getIdMes(), mesdia.getAnio());
+
+        if(lstObjEncontrado.size() > 0){
+            for (MesDia bean : lstObjEncontrado) {
+                System.out.println(bean.getTiposGuardia().getId());
+                System.out.println(mesdia.getTiposGuardia().getId());
+                if(bean.getTiposGuardia().getId() != mesdia.getTiposGuardia().getId() && bean.getTeam().getTipo().getId() == mesdia.getTeam().getTipo().getId()){
+                    System.out.println(bean.getTeam().getId());
+                    System.out.println(mesdia.getTeam().getId());
+                    if(bean.getTeam().getId() == mesdia.getTeam().getId()) {
+                        System.out.println("No puede registrar el mismo grupo en dos turnos consecutivos.");
+                        System.out.println(bean);
+                        bean.setNombreDia("No puede registrar el mismo grupo en dos turnos consecutivos.");
+                        return bean;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
 
     public ByteArrayOutputStream getListServicioMesDiaPdf(List<MesDto> mesDto) {
 

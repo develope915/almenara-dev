@@ -197,13 +197,24 @@ public class MesDiaController {
         Team teamB = serviceTeam.findById(grupo);
         mesdia.setTeam(teamB);
 
-        MesDia aux = service.validar(mesdia);
+        MesDia aux = null;
         MesDia aux2 = service.validar2(mesdia);
+        MesDia aux3 = null;
+        // Indicar el tipo de validación que se hará en base al tipo de guardia que se está ingresando
+        if(mesdia.getTiposGuardia().getId() == 1 ){
+            aux3 = service.validar3(mesdia);
+        } else {
+            aux = service.validar(mesdia);
+        }
+
+
 
         if(aux != null){
             return ResponseEntity.status(HttpStatus.CREATED).body(aux);
         }else if(aux2 != null){
             return ResponseEntity.status(HttpStatus.CREATED).body(aux2);
+        }else if(aux3 != null){
+            return ResponseEntity.status(HttpStatus.CREATED).body(aux3);
         }
 
         return ResponseEntity.status(HttpStatus.CREATED).body(service.update(mesdia, idmesdia));
