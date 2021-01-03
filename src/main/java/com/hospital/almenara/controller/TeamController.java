@@ -1,5 +1,6 @@
 package com.hospital.almenara.controller;
 
+import com.hospital.almenara.dto.DoctoresGruposDTO;
 import com.hospital.almenara.entity.Doctor;
 import com.hospital.almenara.entity.School;
 import com.hospital.almenara.entity.Team;
@@ -31,6 +32,12 @@ public class TeamController {
         return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
     }
 
+
+
+    @GetMapping("/obtenerGruposPorTipo/{categoria}")
+    public ResponseEntity<List<Team>> obtenerGruposPorTipo(@PathVariable Long categoria){
+        return ResponseEntity.status(HttpStatus.OK).body(service.obtenerGruposPorTipo(categoria));
+    }
 
 
     @GetMapping("/{id}")

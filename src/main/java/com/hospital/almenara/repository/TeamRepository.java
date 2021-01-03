@@ -11,5 +11,6 @@ import org.springframework.stereotype.Repository;
 public interface TeamRepository extends JpaRepository<Team, Long> {
 	
 	 List<Team> findAllByTipoId(Long tipoId);
+
 	
 }

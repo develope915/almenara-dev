@@ -7,6 +7,7 @@ import com.hospital.almenara.entity.Team;
 import com.hospital.almenara.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -18,6 +19,11 @@ public class TeamService {
 
     public List<Team> findAll(){
         return repository.findAll();
+    }
+
+    public List<Team> obtenerGruposPorTipo( Long categoria){
+
+        return repository.findAllByTipoId(categoria);
     }
 
     public Team findById(Long id){

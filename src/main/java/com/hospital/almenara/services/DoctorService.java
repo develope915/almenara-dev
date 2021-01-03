@@ -171,6 +171,35 @@ public class DoctorService {
         return lstgrupos;
     }
 
+
+    public List<DoctoresGruposDTO> obtenerGruposPorTipo(Long categoria) {
+
+        List<Team> team = new ArrayList<Team>();
+        List<Doctor> doctorlst  = new ArrayList<Doctor>();
+        List<DoctoresGruposDTO> lstgrupos = new ArrayList<DoctoresGruposDTO>();
+
+        Tipos categoriaBean =  tiporepository.getOne(categoria);
+
+        team = teamrepository.findAllByTipoId(categoria);
+
+        for (Team team2 : team) {
+            DoctoresGruposDTO grupos = new DoctoresGruposDTO();
+            grupos.setIdCategoria(categoria);
+            grupos.setCategoria(categoriaBean.getName());
+            grupos.setIdGrupo(team2.getId());
+            grupos.setNombreGrupo(team2.getName());
+
+            doctorlst = repository.findAllByTeamIdOrderByNivelDesc(team2.getId());
+
+            grupos.setDoctores(doctorlst);
+
+            lstgrupos.add(grupos);
+        }
+
+        return lstgrupos;
+    }
+
+
     public List<DoctoresGruposDTO> findAllByTeamIdGrupo(Long teamId, Long categoria) {
 
 

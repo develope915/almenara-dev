@@ -135,6 +135,7 @@ public class DoctorController {
         return ResponseEntity.status(HttpStatus.OK).body(service.findAllByTeamIdTodos());
     }
 
+
     @GetMapping("/findAllByTeamIdGrupo/{teamId}/{categoria}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<List<DoctoresGruposDTO>> findAllByTeamIdGrupo(@PathVariable Long teamId, @PathVariable Long categoria){
@@ -158,6 +159,7 @@ public class DoctorController {
     public ResponseEntity<List<Tipos>> findAllTipos(){
         return ResponseEntity.status(HttpStatus.OK).body(service.findAllTipos());
     }
+
 
     @PutMapping("updateGrup/{id}/{name}/{team}")
     @PreAuthorize("hasRole('ADMIN')")
