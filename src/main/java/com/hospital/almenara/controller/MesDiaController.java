@@ -9,7 +9,9 @@ import com.hospital.almenara.repository.MesDiaRepository;
 import com.hospital.almenara.services.MesDiaService;
 import com.hospital.almenara.services.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -193,11 +195,36 @@ public class MesDiaController {
 
         MesDia mesdia = service.findById(idmesdia);
         Team teamB = serviceTeam.findById(grupo);
-
-
         mesdia.setTeam(teamB);
+
+        MesDia aux = service.validar(mesdia);
+        MesDia aux2 = service.validar2(mesdia);
+
+        if(aux != null){
+            return ResponseEntity.status(HttpStatus.CREATED).body(aux);
+        }else if(aux2 != null){
+            return ResponseEntity.status(HttpStatus.CREATED).body(aux2);
+        }
 
         return ResponseEntity.status(HttpStatus.CREATED).body(service.update(mesdia, idmesdia));
     }
+
+
+
+
+    @PutMapping("/pdf")
+    public ResponseEntity<byte[]> getListServicioDoctorPdf(@RequestBody List<MesDto> mesDto) {
+        byte[] contents = service.getListServicioMesDiaPdf(mesDto).toByteArray();
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.parseMediaType("application/pdf"));
+        String filename = "medicosPorServicio.pdf";
+        headers.setContentDispositionFormData(filename, filename);
+        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
+        return new ResponseEntity<>(contents, headers, HttpStatus.OK);
+    }
+
+
+
+
 
 }

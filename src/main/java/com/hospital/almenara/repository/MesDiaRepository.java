@@ -9,4 +9,6 @@ import java.util.List;
 public interface MesDiaRepository extends JpaRepository<MesDia,Long>
 {
     List<MesDia> findAllByAnioAcademicoId(Long anio);
+
+    List<MesDia> findByIdDiaAndIdMesAndAnio(Long dia, Long mes, Long anio);
 }
