@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface SchoolAgreementRepository extends JpaRepository<SchoolAgreement,Long>
 {
     SchoolAgreement findBySchoolShortName(String shortName);
+    boolean existsBySchoolShortName(String shortName);
 }

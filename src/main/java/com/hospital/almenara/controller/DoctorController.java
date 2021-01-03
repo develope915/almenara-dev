@@ -22,6 +22,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
@@ -76,8 +77,6 @@ public class DoctorController {
         }
     }
 
-
-
     @PostMapping(value = "/import/doctor")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> saveImportedDoctors(@RequestBody List<Doctor> lstDoctor)
@@ -96,6 +95,19 @@ public class DoctorController {
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Doctor> updateDoctor(@PathVariable Long id, @RequestBody Doctor doctor){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.update(doctor, id));
+    }
+
+    @PostMapping(value = "/validate-imported-data")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<?> validateDataToImport(@RequestBody List<Doctor> lstDoctor)
+    {
+        List<Doctor> lstErrorDoctors = new ArrayList<>();
+        log.info(lstDoctor.toString());
+        lstDoctor.stream().forEach(doctor -> {
+            if(!service.validateDoctor(doctor))
+                lstErrorDoctors.add(doctor);
+        });
+        return ResponseEntity.status(HttpStatus.OK).body(lstDoctor);
     }
 
     @PutMapping("/{id}/{name}/{team}")

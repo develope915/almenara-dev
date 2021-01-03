@@ -13,7 +13,12 @@ public class CampusService {
     @Autowired
     CampusRepository repository;
 
-    public List<Campus> findAll(){
+    public List<Campus> findAll() {
         return repository.findAll();
+    }
+
+    public boolean existsById(Long id)
+    {
+        return repository.existsById(id);
     }
 }

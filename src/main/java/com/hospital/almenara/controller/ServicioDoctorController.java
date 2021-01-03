@@ -15,8 +15,8 @@ import java.util.List;
 @CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
 @RestController
 @RequestMapping("/servicio-doctor")
-public class ServicioDoctorController {
-
+public class ServicioDoctorController
+{
     @Autowired
     ServicioDoctorService service;
 
@@ -31,6 +31,19 @@ public class ServicioDoctorController {
         return service.findAllBySpecialty(idSpecialty);
     }
 
+    @GetMapping("/report/{idServicio}/{idAnio}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public List<ServicioDoctor> findByServicioAndAnioAndMes(@PathVariable Long idServicio, @PathVariable Long idAnio)
+    {
+        return service.findAllByServiceIdAndPeriod(idServicio, idAnio);
+    }
+
+//    @GetMapping("/{idService}")
+//    public List<ServicioDoctor> findByServiceId(@PathVariable Long idService)
+//    {
+//        return service.findAllBySpecialty(idService);
+//    }
+
     @GetMapping("/pdf")
     public ResponseEntity<byte[]> getListServicioDoctorPdf() {
         byte[] contents = service.getListServicioDoctorsPdf().toByteArray();
@@ -43,11 +56,24 @@ public class ServicioDoctorController {
     }
 
     @GetMapping("/pdf/{idSpacialty}")
-    public ResponseEntity<byte[]> getListServicioDoctorsPdfByIdSpecialty(@PathVariable Long idSpacialty) {
+    public ResponseEntity<byte[]> getListServicioDoctorsPdfByIdSpecialty(@PathVariable Long idSpacialty)
+    {
         byte[] contents = service.getListServicioDoctorsPdfByIdSpecialty(idSpacialty).toByteArray();
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.parseMediaType("application/pdf"));
         String filename = "medicosPorServicio.pdf";
+        headers.setContentDispositionFormData(filename, filename);
+        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
+        return new ResponseEntity<>(contents, headers, HttpStatus.OK);
+    }
+
+    @GetMapping("/pdf/medicos-residentes-otras-especialidades-por-periodo/{idServicio}/{idAnio}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<byte[]> getListServicioDoctorPdfByServicioAndAnioAndMes(@PathVariable Long idServicio, @PathVariable Long idAnio)
+    {
+        byte[] contents = service.getListServicioDoctorPdfByServicioAndAnioAndMes(idServicio, idAnio).toByteArray();
+        HttpHeaders headers = new HttpHeaders();
+        String filename = "Relacion-medicos-residentes-otras-especialidades-por-periodo.pdf";
         headers.setContentDispositionFormData(filename, filename);
         headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
         return new ResponseEntity<>(contents, headers, HttpStatus.OK);

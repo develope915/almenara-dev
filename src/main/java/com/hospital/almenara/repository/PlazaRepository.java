@@ -5,5 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PlazaRepository extends JpaRepository<Plaza,Long> {
+public interface PlazaRepository extends JpaRepository<Plaza,Long>
+{
+    boolean existsById(Long id);
 }

@@ -1,8 +1,8 @@
 package com.hospital.almenara.controller;
 
-import com.hospital.almenara.entity.AnioAcademico;
+import com.hospital.almenara.entity.Servicio;
+import com.hospital.almenara.services.ServicioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.hospital.almenara.repository.AnioAcademicoRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,15 +12,15 @@ import java.util.List;
 
 @CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
 @RestController
-
-@RequestMapping("/anio-academico")
-public class AnioAcademicoController {
-
+@RequestMapping("/servicios")
+public class ServicioController
+{
     @Autowired
-    AnioAcademicoRepository repository;
+    ServicioService service;
 
     @GetMapping
-    public List<AnioAcademico> find(){
-        return repository.findAll();
+    public List<Servicio> findAll()
+    {
+        return service.findAll();
     }
 }

@@ -1,11 +1,13 @@
 package com.hospital.almenara.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
 @Entity
 @Data
+@EqualsAndHashCode
 public class AnioAcademico {
 
     @Id

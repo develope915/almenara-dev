@@ -16,4 +16,9 @@ public class PlazaService {
     public List<Plaza> findAll(){
         return repository.findAll();
     }
+
+    public boolean existsById(Long id)
+    {
+        return repository.existsById(id);
+    }
 }
