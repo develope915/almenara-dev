@@ -273,7 +273,7 @@ public class DoctorService {
     }
 
     public ServicioDoctor initializeServiceDoctor(Doctor doctor)
-    {   // Inicializando datos del medico
+    {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(doctor.getRegisteredAt());
         int initializeAnio                          = calendar.get(Calendar.YEAR);
