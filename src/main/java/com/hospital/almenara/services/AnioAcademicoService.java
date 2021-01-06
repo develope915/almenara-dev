@@ -16,7 +16,7 @@ public class AnioAcademicoService
     @Autowired
     AnioAcademicoRepository anioAcademicoRepository;
 
-    public List<AnioAcademico> generateAniosAcademicos(int initAnio)
+    public List<AnioAcademico>      generateAniosAcademicos(int initAnio)
     {
         List<AnioAcademico> generatedAniosAcademicos = null;
         int endAnio = initAnio + 2;
