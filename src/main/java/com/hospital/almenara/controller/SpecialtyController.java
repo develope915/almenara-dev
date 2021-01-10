@@ -1,16 +1,17 @@
 package com.hospital.almenara.controller;
 
 import com.hospital.almenara.dto.SpecialityDto;
+import com.hospital.almenara.entity.School;
+import com.hospital.almenara.entity.Servicio;
 import com.hospital.almenara.entity.Specialty;
+import com.hospital.almenara.repository.SchoolRepository;
+import com.hospital.almenara.repository.SpecialtyRepository;
 import com.hospital.almenara.services.SpecialtyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,10 +23,15 @@ public class SpecialtyController {
     @Autowired
     SpecialtyService service;
 
+
+    @Autowired
+    SpecialtyRepository repository;
+
+
     @GetMapping
     //@PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public ResponseEntity<List<Specialty>> find(){
-        return ResponseEntity.status(HttpStatus.OK).body(service.findAllActive());
+        return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
     }
 
     @GetMapping("/simple")
@@ -34,4 +40,13 @@ public class SpecialtyController {
     {
         return ResponseEntity.status(HttpStatus.OK).body(service.getAllDto());
     }
+
+
+    @PostMapping("/create")
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
+    public Specialty create(@RequestBody Specialty servicio)
+    {
+        return service.create(servicio);
+    }
+
 }

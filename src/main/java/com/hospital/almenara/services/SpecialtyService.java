@@ -1,6 +1,7 @@
 package com.hospital.almenara.services;
 
 import com.hospital.almenara.dto.SpecialityDto;
+import com.hospital.almenara.entity.Servicio;
 import com.hospital.almenara.entity.Specialty;
 import com.hospital.almenara.repository.SpecialtyRepository;
 import net.bytebuddy.build.HashCodeAndEqualsPlugin;
@@ -17,11 +18,17 @@ public class SpecialtyService {
     @Autowired
     SpecialtyRepository repository;
 
+    public List<Specialty> findAll()
+    {
+        return repository.findAll();
+    }
+
+
     public List<Specialty> findAllActive()
     {
         return repository.findAll().stream()
                                    .sorted(Comparator.comparing(Specialty::getName))
-                                   .filter(speciality -> speciality.getState() == 1)
+                                   .filter(speciality -> speciality.getState() == true)
                                    .collect(Collectors.toList());
     }
 
@@ -30,7 +37,7 @@ public class SpecialtyService {
         return repository.findAll().stream()
                 .map(speciality -> new SpecialityDto(speciality.getId(),
                                                      speciality.getName(),
-                                                     speciality.getState()))
+                                                    ( speciality.getState() == true )? 1 : 0   ))
                 .collect(Collectors.toList());
     }
 
@@ -38,4 +45,11 @@ public class SpecialtyService {
     {
         return repository.existsById(id);
     }
+
+    public Specialty create(Specialty servicio)
+    {
+        return repository.save(servicio);
+    }
+
+
 }
