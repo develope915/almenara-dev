@@ -1,9 +1,12 @@
 package com.hospital.almenara.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -14,6 +17,24 @@ public class Specialty {
     private Long id;
     private String name;
     private int state;
+
+    @JoinTable(name = "specialty_servicios",
+               joinColumns = {@JoinColumn(name = "specialty_id")},
+               inverseJoinColumns = {@JoinColumn(name = "servicios_id")})
     @ManyToMany
-    private List<Servicio> servicios;
+    private Set<Servicio> servicios = new HashSet<>();
+
+    public void addService(Servicio servicio)
+    {
+        if(this.servicios == null)
+        {
+            this.servicios = new HashSet<>();
+        }
+        this.servicios.add(servicio);
+    }
+
+    public void removeService(Servicio servicio)
+    {
+        this.servicios.remove(servicio);
+    }
 }

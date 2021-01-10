@@ -1,5 +1,6 @@
 package com.hospital.almenara.controller;
 
+import com.hospital.almenara.dto.SpecialityDto;
 import com.hospital.almenara.entity.Specialty;
 import com.hospital.almenara.services.SpecialtyService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,5 +26,12 @@ public class SpecialtyController {
     //@PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public ResponseEntity<List<Specialty>> find(){
         return ResponseEntity.status(HttpStatus.OK).body(service.findAllActive());
+    }
+
+    @GetMapping("/simple")
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
+    public ResponseEntity<List<SpecialityDto>> findAllDto()
+    {
+        return ResponseEntity.status(HttpStatus.OK).body(service.getAllDto());
     }
 }

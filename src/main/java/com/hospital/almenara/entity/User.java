@@ -20,7 +20,7 @@ public class User {
     private String lastName;
     private Boolean status;
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST,CascadeType.REFRESH})
-    @JoinTable(name="userRoles",
+    @JoinTable(name="user_roles",
                joinColumns = @JoinColumn(name = "user_id"),
                inverseJoinColumns = @JoinColumn(name = "role_id")
     )
@@ -41,4 +41,18 @@ public class User {
         this.lastName = lastName;
     }
 
+    public void addRole(Role role)
+    {
+        if(this.roles == null)
+        {
+            this.roles = new HashSet<>();
+        }
+
+        this.roles.add(role);
+    }
+
+    public void removeRole(Role role)
+    {
+        this.roles.remove(role);
+    }
 }
