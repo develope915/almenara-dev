@@ -19,11 +19,11 @@ public class User {
     private String name;
     private String lastName;
     private Boolean status;
+
+    @JoinTable( name="user_roles",
+                joinColumns = {@JoinColumn(name = "user_id")},
+                inverseJoinColumns = {@JoinColumn(name = "role_id")} )
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST,CascadeType.REFRESH})
-    @JoinTable(name="user_roles",
-               joinColumns = @JoinColumn(name = "user_id"),
-               inverseJoinColumns = @JoinColumn(name = "role_id")
-    )
     private Set<Role> roles = new HashSet<>();
 
     @PrePersist

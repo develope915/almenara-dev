@@ -63,27 +63,45 @@ public class UserService
     }
 
     public User update(User user, Long id)
-    {   User updObj = repository.getOne(id);
-        if (user.getUsername() != null) updObj.setUsername(user.getUsername());
+    {
+        User updObj = repository.getOne(id);
 
+        if (user.getUsername() != null)
+            updObj.setUsername(user.getUsername());
 
         if (user.getPassword() != null)
             if (!user.getPassword().equals(updObj.getPassword()))
                 updObj.setPassword(encoder.encode(user.getPassword()));
 
-        if (user.getName() != null) updObj.setName(user.getName());
-        if (user.getLastName() != null) updObj.setLastName(user.getLastName());
-        if (user.getStatus() != null) updObj.setStatus(user.getStatus());
+        if (user.getName() != null)
+            updObj.setName(user.getName());
+
+        if (user.getLastName() != null)
+            updObj.setLastName(user.getLastName());
+
+        if (user.getStatus() != null)
+            updObj.setStatus(user.getStatus());
 
         Set<Role> roleList = user.getRoles();
         Set<Role> roles = new HashSet<>();
 
-        roleList.forEach(role -> {
-            if (role.getId() == 1) {
+//        updObj.getRoles().forEach( role -> {
+//            if (!roles.contains(role))
+//                updObj.removeRole(role);
+//        } );
+
+        roleList.forEach(role ->
+        {
+//            if(!updObj.getRoles().contains(role))
+//                updObj.addRole(role);
+            if (role.getId() == 1)
+            {
                 Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
                         .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
                 roles.add(adminRole);
-            } else {
+            }
+            else
+            {
                 Role userRole = roleRepository.findByName(ERole.ROLE_USER)
                         .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
                 roles.add(userRole);

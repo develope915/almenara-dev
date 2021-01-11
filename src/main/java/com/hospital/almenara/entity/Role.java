@@ -18,6 +18,6 @@ public class Role {
     private Long id;
     @Enumerated(EnumType.STRING)
     private ERole name;
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST,CascadeType.REFRESH})
-    private Set<User> users = new HashSet<>();
+//    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST,CascadeType.REFRESH})
+//    private Set<User> users = new HashSet<>();
 }

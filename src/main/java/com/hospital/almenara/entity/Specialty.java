@@ -3,9 +3,7 @@ package com.hospital.almenara.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,9 +16,9 @@ public class Specialty {
     private String name;
     private int state;
 
-    @JoinTable(name = "specialty_servicios",
-               joinColumns = {@JoinColumn(name = "specialty_id")},
-               inverseJoinColumns = {@JoinColumn(name = "servicios_id")})
+    @JoinTable( name = "specialty_servicios",
+                joinColumns = {@JoinColumn(name = "specialty_id")},
+                inverseJoinColumns = {@JoinColumn(name = "servicios_id")})
     @ManyToMany
     private Set<Servicio> servicios = new HashSet<>();
 
