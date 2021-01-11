@@ -14,7 +14,7 @@ public class Specialty {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private int state;
+    private Boolean state;
 
     @JoinTable( name = "specialty_servicios",
                 joinColumns = {@JoinColumn(name = "specialty_id")},
@@ -35,4 +35,6 @@ public class Specialty {
     {
         this.servicios.remove(servicio);
     }
+
+
 }
