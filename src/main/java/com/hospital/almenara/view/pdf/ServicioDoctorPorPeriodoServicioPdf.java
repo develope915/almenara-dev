@@ -187,7 +187,7 @@ public class ServicioDoctorPorPeriodoServicioPdf {
 
             document.addTitle("SERVICIO MÉDICOS");
 
-            Path pathPhoto = Paths.get("src/main/resources/static").resolve("logo_hospital.png").toAbsolutePath();
+            Path pathPhoto = Paths.get("src/main/resources/static").resolve("logo_essalud.png").toAbsolutePath();
             com.lowagie.text.Image photo = Image.getInstance(String.valueOf(pathPhoto));
             photo.scaleToFit(60, 60);
 

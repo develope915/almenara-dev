@@ -192,7 +192,7 @@ public class DoctorPdf {
 
             document.addTitle("MÉDICOS");
 
-            Path pathPhoto = Paths.get("src/main/resources/static").resolve("logo_hospital.png").toAbsolutePath();
+            Path pathPhoto = Paths.get("src/main/resources/static").resolve("logo_essalud.png").toAbsolutePath();
             Image photo = Image.getInstance(String.valueOf(pathPhoto));
             photo.scaleToFit(60, 60);
 

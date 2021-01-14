@@ -1,11 +1,10 @@
 INSERT INTO role(name) values('ROLE_ADMIN')
 INSERT INTO role(name) values('ROLE_USER')
 
-insert into user(username,password,name,last_name,status) values('andony','$2a$10$V4PPljRqDQCNVay7jYxmx.xtwV6IxR1bQbkuItyIAKSpcy1b1y2Ce','Aimar Andony', 'Berrocal Coaquira', 1)
+insert into user(username,password,name,last_name,status) values('user','$2a$10$f0FxMfS80Po89Sn/y8RFAOZ5TKeG36hRULXCrPMymw8JgXVuYVvdm','Aimar Andony', 'Berrocal Coaquira', 1)
 insert into user(username,password,name,last_name,status) values('jose','$2a$10$f0FxMfS80Po89Sn/y8RFAOZ5TKeG36hRULXCrPMymw8JgXVuYVvdm','Jose', 'Alvino', 1)
 insert into user(username,password,name,last_name,status) values('murillo','$2a$10$f0FxMfS80Po89Sn/y8RFAOZ5TKeG36hRULXCrPMymw8JgXVuYVvdm','Oscar David', 'Murillo Briceño', 1)
 
-insert into user_roles values(1,1)
 insert into user_roles values(1,2)
 insert into user_roles values(2,1)
 insert into user_roles values(2,2)
@@ -93,13 +92,13 @@ insert into servicio(name, state) values('ANEST. OBST. I.M.PERINATAL', true)
 insert into servicio(name, state) values('ANEST_PEDIATRICA - INSN, SAN BORJA', true)
 insert into servicio(name, state) values('ANESTESIO NEUROQUIRUGICA', true)
 insert into servicio(name, state) values('ANESTESIO PEDIATRICA SAN BARTOLOME', true)
-insert into servicio(name, state) values('ANESTESIOLOGIA', true)
+insert into servicio(name, state) values('ANESTESIOLOGIA', false)
 insert into servicio(name, state) values('ANESTESIOLOGIA H. LOAYZA', true)
 insert into servicio(name, state) values('ANESTESIOLOGIA ISN', true)
 insert into servicio(name, state) values('ANESTESIOLOGIA PEDIATRICA HNERM', true)
 insert into servicio(name, state) values('BANCO DE SANGRE', true)
 insert into servicio(name, state) values('BLOQUEOS UPCH', true)
-insert into servicio(name, state) values('CARDIOLOGIA', true)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
 insert into servicio(name, state) values('CIRUGIA DE DIA', true)
 insert into servicio(name, state) values('CIRUGIA DE DIA HNGAI', true)
 insert into servicio(name, state) values('NEFROLOGIA', true)
@@ -114,8 +113,8 @@ insert into servicio(name, state) values('VENTILOTER. SABOGAL', true)
 insert into servicio(name, state) values('VENTILOTERAPIA', true)
 
 -- CARDIOLOGIA
-insert into servicio(name, state) values('ANESTESIOLOGIA', true)
-insert into servicio(name, state) values('CARDIOLOGIA', true)
+insert into servicio(name, state) values('ANESTESIOLOGIA', false)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
 insert into servicio(name, state) values('CARDIOLOGIA PEDIATRICA', true)
 insert into servicio(name, state) values('CARDIOLOGIA PEDIATRICA INCOR', true)
 insert into servicio(name, state) values('CCV', true)
@@ -127,7 +126,7 @@ insert into servicio(name, state) values('HEMODINAMICA Y CARDIOLOGIA INTERVENC',
 insert into servicio(name, state) values('MEDICINA INTERNA 2', true)
 insert into servicio(name, state) values('MEDICINA INTERNA 5', true)
 insert into servicio(name, state) values('REHAB. CARDIACA', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
 insert into servicio(name, state) values('UCI - GRAU', true)
 insert into servicio(name, state) values('UCI CORONARIA', true)
 insert into servicio(name, state) values('UNIDAD ARRITMIAS', true)
@@ -136,7 +135,7 @@ insert into servicio(name, state) values('UNIDAD DE CUIDADOS CORONARIOS', true)
 
 -- CIRUGIA GENERAL
 
-insert into servicio(name, state) values('ANESTESIO', true)
+insert into servicio(name, state) values('ANESTESIO', false)
 insert into servicio(name, state) values('CIRUGIA', true)
 insert into servicio(name, state) values('COLON', true)
 insert into servicio(name, state) values('CX_ EMERGE', true)
@@ -162,11 +161,11 @@ insert into servicio(name, state) values('INFECTOLOGIA TROPICALES', true)
 insert into servicio(name, state) values('MEDICINA 2', true)
 insert into servicio(name, state) values('MEDICINA TROPICAL HCH', true)
 insert into servicio(name, state) values('MICROBIOLOGIA', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
 
 -- ENDOCRINOLOGIA
 
-insert into servicio(name, state) values('CARDIOLOGIA', true)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
 insert into servicio(name, state) values('CITOGENETICA', true)
 insert into servicio(name, state) values('CITOLOGIA Y CITO - INSN', true)
 insert into servicio(name, state) values('ECO TOMO HNGAI', true)
@@ -174,52 +173,52 @@ insert into servicio(name, state) values('ENDOCRINOLOGIA', true)
 insert into servicio(name, state) values('ENDOCRINOLOGIA PEDIATRICA HNERM', true)
 insert into servicio(name, state) values('MED 3', true)
 insert into servicio(name, state) values('MED. NUCLEAR', true)
-insert into servicio(name, state) values('NEFROLOGIA', true)
+insert into servicio(name, state) values('NEFROLOGIA', false)
 insert into servicio(name, state) values('NEUROLOGIA', true)
 insert into servicio(name, state) values('OFTALMOLOGIA', true)
 insert into servicio(name, state) values('REPRODUCCION HUMANA', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
 insert into servicio(name, state) values('USNA', true)
 
 -- GASTROENTEROLOGÍA
 
 insert into servicio(name, state) values('ANATOMIA PATOLOGIACITOLOGIA CITOGENETICA', true)
 insert into servicio(name, state) values('GASTRO', true)
-insert into servicio(name, state) values('GASTROENTEROLOGIA', true)
+insert into servicio(name, state) values('GASTROENTEROLOGIA', false)
 insert into servicio(name, state) values('INFECTOLOGIA', true)
 insert into servicio(name, state) values('MEDICINA INTERNA 1', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 1 - INFECTO', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 5', true)
+insert into servicio(name, state) values('MEDICINA INTERNA 1 - INFECTO', false)
+insert into servicio(name, state) values('MEDICINA INTERNA 5', false)
 insert into servicio(name, state) values('RX', true)
 insert into servicio(name, state) values('SOPORTE NUTRICIONAL', true)
 insert into servicio(name, state) values('TACHNGAI', true)
-insert into servicio(name, state) values('UCI', true)
-insert into servicio(name, state) values('USNA', true)
+insert into servicio(name, state) values('UCI', false)
+insert into servicio(name, state) values('USNA', false)
 
 -- GERIATRIA
 
 insert into servicio(name, state) values('ATENCION DOMICILIARIA - FAP', true)
-insert into servicio(name, state) values('CARDIOLOGIA', true)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
 insert into servicio(name, state) values('CEXT GER', true)
 insert into servicio(name, state) values('CEXT.HNGAI', true)
 insert into servicio(name, state) values('CONSULTORIO - HNGAI', true)
 insert into servicio(name, state) values('DX. X IMÁGENESRADIOLOGIA', true)
 insert into servicio(name, state) values('EMERG', true)
-insert into servicio(name, state) values('ENDOCRINO', true)
-insert into servicio(name, state) values('GASTRO', true)
+insert into servicio(name, state) values('ENDOCRINO', false)
+insert into servicio(name, state) values('GASTRO', false)
 insert into servicio(name, state) values('GASTROENTEROLOGIA HNGAI', true)
 insert into servicio(name, state) values('HEMATOLOGIA', true)
 insert into servicio(name, state) values('HOSP_DIAGERIATRIA', true)
 insert into servicio(name, state) values('HOSPITAL DE DIA', true)
 insert into servicio(name, state) values('MEDICINA FISICA', true)
 insert into servicio(name, state) values('MEDICINA FISICA Y REHABILITACION', true)
-insert into servicio(name, state) values('NEFROLOGIA', true)
-insert into servicio(name, state) values('NEUMOLOGIA', true)
-insert into servicio(name, state) values('NEUROLOGIA', true)
+insert into servicio(name, state) values('NEFROLOGIA', false)
+insert into servicio(name, state) values('NEUMOLOGIA', false)
+insert into servicio(name, state) values('NEUROLOGIA', false)
 insert into servicio(name, state) values('ONCOLOGIA', true)
 insert into servicio(name, state) values('REHABILITACION', true)
 insert into servicio(name, state) values('TRAUMA/PATOCLIN', true)
-insert into servicio(name, state) values('UCI', true)
+insert into servicio(name, state) values('UCI', false)
 insert into servicio(name, state) values('UGA', true)
 insert into servicio(name, state) values('UGA-GERIATRIA', true)
 insert into servicio(name, state) values('UNID.PSICOGER HNERM', true)
@@ -228,20 +227,20 @@ insert into servicio(name, state) values('UNIDAD DE PSICOGERIATRIA', true)
 -- GINECO OBSTETRICIA
 
 insert into servicio(name, state) values('ANATO_PATOLOGICA', true)
-insert into servicio(name, state) values('ANESTESIO', true)
+insert into servicio(name, state) values('ANESTESIO', false)
 insert into servicio(name, state) values('ARO', true)
-insert into servicio(name, state) values('CIRUGIA', true)
+insert into servicio(name, state) values('CIRUGIA', false)
 insert into servicio(name, state) values('CIRUGIA Coloproctologia', true)
 insert into servicio(name, state) values('CLIMATERIO', true)
 insert into servicio(name, state) values('ECOGRAFIA', true)
 insert into servicio(name, state) values('ELECTIVA', true)
-insert into servicio(name, state) values('ENDOCRINO', true)
+insert into servicio(name, state) values('ENDOCRINO', false)
 insert into servicio(name, state) values('GINECOLOGIA', true)
 insert into servicio(name, state) values('INFERTILIDAD', true)
 insert into servicio(name, state) values('NEONATOLOGIA', true)
 insert into servicio(name, state) values('OBST_PATOLPOGICA', true)
 insert into servicio(name, state) values('OBSTETRICIA', true)
-insert into servicio(name, state) values('OBSTETRICIA DE ALTO RIESGO', true)
+insert into servicio(name, state) values('OBSTETRICIA DE ALTO RIESGO', false)
 insert into servicio(name, state) values('ONCOLOGIA GINECOLOGICA', true)
 insert into servicio(name, state) values('ONCOLOGIA MAMARIA', true)
 insert into servicio(name, state) values('PLANIFICACION COMUNITARIA', true)
@@ -251,26 +250,26 @@ insert into servicio(name, state) values('UROLOGIA', true)
 
 -- MED.  EMERGENCIAS Y DESASTRES
 
-insert into servicio(name, state) values('ANESTESIO', true)
-insert into servicio(name, state) values('CARDIOLOGIA', true)
-insert into servicio(name, state) values('CIRUGIA', true)
+insert into servicio(name, state) values('ANESTESIO', false)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
+insert into servicio(name, state) values('CIRUGIA', false)
 insert into servicio(name, state) values('CIRUGIA_ EMERGENCIAS CI', true)
 insert into servicio(name, state) values('GINECO OBSTETRICIA', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 5', true)
+insert into servicio(name, state) values('MEDICINA INTERNA 5', false)
 insert into servicio(name, state) values('PEDIATRIA', true)
 insert into servicio(name, state) values('TACHNGAI', true)
 insert into servicio(name, state) values('UCE', true)
 
 -- MED.ENFERMEDADES INFECCIOSAS
 
-insert into servicio(name, state) values('CARDIO', true)
+insert into servicio(name, state) values('CARDIO', false)
 insert into servicio(name, state) values('CONTROL ANTIBIOTICO', true)
-insert into servicio(name, state) values('DERMATO', true)
-insert into servicio(name, state) values('GASTRO', true)
+insert into servicio(name, state) values('DERMATO', false)
+insert into servicio(name, state) values('GASTRO', false)
 insert into servicio(name, state) values('HEMATO', true)
 insert into servicio(name, state) values('HOSPITAL DE APOYO - IQUITOS', true)
 insert into servicio(name, state) values('INFECTO_PEDIINSN - SAN BORJA', true)
-insert into servicio(name, state) values('INFECTOLOGIA', true)
+insert into servicio(name, state) values('INFECTOLOGIA', false)
 insert into servicio(name, state) values('INFECTOLOGIA - HOSPITALIZACION', true)
 insert into servicio(name, state) values('INFECTOLOGIA HOSPITALIZACION CCEE CONTROL DE ANTIBIOTICOS', true)
 insert into servicio(name, state) values('INMUNOCOMPROMETIDOSINEN', true)
@@ -278,92 +277,92 @@ insert into servicio(name, state) values('INMUNOSUPRIMIDOS', true)
 insert into servicio(name, state) values('LAB. MICROB. ALMENARA', true)
 insert into servicio(name, state) values('LAB_BACTERIOL', true)
 insert into servicio(name, state) values('MED_TROPICAL (INST. VON HUMBOLT', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 1', true)
-insert into servicio(name, state) values('MICROBIOLOGIA', true)
+insert into servicio(name, state) values('MEDICINA INTERNA 1', false)
+insert into servicio(name, state) values('MICROBIOLOGIA', false)
 insert into servicio(name, state) values('NEFROL', true)
-insert into servicio(name, state) values('NEUMOLOGIA', true)
+insert into servicio(name, state) values('NEUMOLOGIA', false)
 insert into servicio(name, state) values('NEURO', true)
 insert into servicio(name, state) values('REUMATOL', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
-insert into servicio(name, state) values('TAC', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
+insert into servicio(name, state) values('TAC', false)
 insert into servicio(name, state) values('TACHNGAI', true)
 insert into servicio(name, state) values('TOMOGRAFIA', true)
 insert into servicio(name, state) values('TRASP_MED_OSEAINEN', true)
 insert into servicio(name, state) values('TRASPLANTE DE ORGANOS', true)
 insert into servicio(name, state) values('TROPICALES - HCH', true)
-insert into servicio(name, state) values('UCI', true)
+insert into servicio(name, state) values('UCI', false)
 insert into servicio(name, state) values('UTMO', true)
 
 -- MEDICINA INTENSIVA
 
-insert into servicio(name, state) values('ANESTESIO', true)
+insert into servicio(name, state) values('ANESTESIO', false)
 insert into servicio(name, state) values('BIOINGENIERIA', true)
-insert into servicio(name, state) values('BIOINGENIERIA', true)
-insert into servicio(name, state) values('CARDIO', true)
+insert into servicio(name, state) values('BIOINGENIERIA', false)
+insert into servicio(name, state) values('CARDIO', false)
 insert into servicio(name, state) values('CARDIO - UCC', true)
 insert into servicio(name, state) values('CARDIOLOGIAHNDAC', true)
 insert into servicio(name, state) values('ECO TOMO', true)
 insert into servicio(name, state) values('ECO_TOMOHNGAI', true)
 insert into servicio(name, state) values('MI 2', true)
 insert into servicio(name, state) values('MI 5', true)
-insert into servicio(name, state) values('NEFROLOGIA', true)
-insert into servicio(name, state) values('NEUMOLOGIA', true)
-insert into servicio(name, state) values('NEUROLOGIA', true)
+insert into servicio(name, state) values('NEFROLOGIA', false)
+insert into servicio(name, state) values('NEUMOLOGIA', false)
+insert into servicio(name, state) values('NEUROLOGIA', false)
 insert into servicio(name, state) values('RADIOLOGIA', true)
-insert into servicio(name, state) values('SOPORTE NUTRICIONAL', true)
+insert into servicio(name, state) values('SOPORTE NUTRICIONAL', false)
 insert into servicio(name, state) values('TRASPLANTE', true)
-insert into servicio(name, state) values('UCI', true)
+insert into servicio(name, state) values('UCI', false)
 insert into servicio(name, state) values('UCI CCV', true)
 insert into servicio(name, state) values('UCI PEDIATRICO', true)
 insert into servicio(name, state) values('UCI_CORONARIOS CARDIOLOGIA - HNGAI', true)
 
 -- MEDICINA INTERNA
 
-insert into servicio(name, state) values('CARDIOLOGIA', true)
-insert into servicio(name, state) values('DERMATO', true)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
+insert into servicio(name, state) values('DERMATO', false)
 insert into servicio(name, state) values('DERMATOLOGIA HNGAI', true)
-insert into servicio(name, state) values('ENDOCRINO', true)
+insert into servicio(name, state) values('ENDOCRINO', false)
 insert into servicio(name, state) values('ENDOCRINO HNGAI', true)
-insert into servicio(name, state) values('GASTRO', true)
+insert into servicio(name, state) values('GASTRO', false)
 insert into servicio(name, state) values('GASTRO HNGAI', true)
-insert into servicio(name, state) values('HEMATOLOGIA', true)
+insert into servicio(name, state) values('HEMATOLOGIA', false)
 insert into servicio(name, state) values('HEMATOLOGIA CLINICA', true)
 insert into servicio(name, state) values('HEMATOLOGIA CLINICA HNGAI', true)
 insert into servicio(name, state) values('INFECTO HNGAI', true)
-insert into servicio(name, state) values('INFECTOLOGIA', true)
+insert into servicio(name, state) values('INFECTOLOGIA', false)
 insert into servicio(name, state) values('MED. FISICA Y REHAB', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 1', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 2', true)
+insert into servicio(name, state) values('MEDICINA INTERNA 1', false)
+insert into servicio(name, state) values('MEDICINA INTERNA 2', false)
 insert into servicio(name, state) values('MEDICINA INTERNA 3', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 5', true)
-insert into servicio(name, state) values('NEFROLOGIA', true)
-insert into servicio(name, state) values('NEUMOLOGIA', true)
-insert into servicio(name, state) values('NEUROLOGIA', true)
+insert into servicio(name, state) values('MEDICINA INTERNA 5', false)
+insert into servicio(name, state) values('NEFROLOGIA', false)
+insert into servicio(name, state) values('NEUMOLOGIA', false)
+insert into servicio(name, state) values('NEUROLOGIA', false)
 insert into servicio(name, state) values('NEUROLOGIA HNGAI', true)
-insert into servicio(name, state) values('ONCOLOGIA', true)
+insert into servicio(name, state) values('ONCOLOGIA', false)
 insert into servicio(name, state) values('PATOLOGIA CLINICA', true)
 insert into servicio(name, state) values('PSIQUIAT', true)
 insert into servicio(name, state) values('PSIQUIATRIA HNGAI', true)
-insert into servicio(name, state) values('RADIOLOGIA', true)
+insert into servicio(name, state) values('RADIOLOGIA', false)
 insert into servicio(name, state) values('RADIOLOGIA GENERAL', true)
 insert into servicio(name, state) values('REUMATOL LOAYZA', true)
 insert into servicio(name, state) values('REUMATOLO', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
-insert into servicio(name, state) values('RX', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
+insert into servicio(name, state) values('RX', false)
 insert into servicio(name, state) values('SHOCK TRAUMA', true)
-insert into servicio(name, state) values('TAC', true)
+insert into servicio(name, state) values('TAC', false)
 insert into servicio(name, state) values('TAC HNGAI', true)
-insert into servicio(name, state) values('UCI', true)
+insert into servicio(name, state) values('UCI', false)
 insert into servicio(name, state) values('UCI - CORONARIA', true)
 insert into servicio(name, state) values('UCI GENERAL', true)
-insert into servicio(name, state) values('USNA', true)
+insert into servicio(name, state) values('USNA', false)
 
 -- MED OCUPACIONAL Y DEL AMBIENTE
 
-insert into servicio(name, state) values('CARDIOLOGIA', true)
-insert into servicio(name, state) values('DERMATOLOGIA', true)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
+insert into servicio(name, state) values('DERMATOLOGIA', false)
 insert into servicio(name, state) values('MED. FISICA', true)
-insert into servicio(name, state) values('MEDICINA FISICA', true)
+insert into servicio(name, state) values('MEDICINA FISICA', false)
 insert into servicio(name, state) values('MEDICINA OCUPACIONAL', true)
 insert into servicio(name, state) values('MEDICINA OCUPACIONAL ASEGURADORA PACIFICO', true)
 insert into servicio(name, state) values('MEDICINA OCUPACIONAL CENSOPAS', true)
@@ -372,48 +371,48 @@ insert into servicio(name, state) values('MEDICINA OCUPACIONAL CLINICA DEL TRABA
 insert into servicio(name, state) values('MEDICINA OCUPACIONAL DIGESA', true)
 insert into servicio(name, state) values('MEDICINA OCUPACIONAL EMPRESA BASF', true)
 insert into servicio(name, state) values('MEDICINA OCUPACIONAL NATCLAR', true)
-insert into servicio(name, state) values('NEUMOLOGIA', true)
-insert into servicio(name, state) values('NEUROLOGIA', true)
+insert into servicio(name, state) values('NEUMOLOGIA', false)
+insert into servicio(name, state) values('NEUROLOGIA', false)
 insert into servicio(name, state) values('OFTALMOLO', true)
 insert into servicio(name, state) values('OTORRINO', true)
 insert into servicio(name, state) values('PSIQUIATRIA', true)
 insert into servicio(name, state) values('REUMATOLOGIA GRAU', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
-insert into servicio(name, state) values('RX', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
+insert into servicio(name, state) values('RX', false)
 insert into servicio(name, state) values('SALUD OCUPACIONAL', true)
-insert into servicio(name, state) values('TRAUMATO', true)
+insert into servicio(name, state) values('TRAUMATO', false)
 
 -- NEFROLOGÍA
 
 insert into servicio(name, state) values('ANA_PATO', true)
-insert into servicio(name, state) values('CARDIOLOGIA', true)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
 insert into servicio(name, state) values('DIALISIS', true)
-insert into servicio(name, state) values('ENDOCRINOL', true)
+insert into servicio(name, state) values('ENDOCRINOL', false)
 insert into servicio(name, state) values('HEMODIALISIS', true)
 insert into servicio(name, state) values('MEDICINA 3', true)
 insert into servicio(name, state) values('MI 3', true)
-insert into servicio(name, state) values('MI 5', true)
+insert into servicio(name, state) values('MI 5', false)
 insert into servicio(name, state) values('NEFROL. PEDIATR. RAR', true)
-insert into servicio(name, state) values('NEFROLOGIA', true)
+insert into servicio(name, state) values('NEFROLOGIA', false)
 insert into servicio(name, state) values('NEFROLOGIA ISN - BREÑA', true)
 insert into servicio(name, state) values('NEFROLOGIA PEDIATRICA', true)
-insert into servicio(name, state) values('TAC', true)
-insert into servicio(name, state) values('TAC HNGAI', true)
+insert into servicio(name, state) values('TAC', false)
+insert into servicio(name, state) values('TAC HNGAI', false)
 insert into servicio(name, state) values('TRASPLANTE RENAL', true)
-insert into servicio(name, state) values('UCI', true)
-insert into servicio(name, state) values('UROLOGIA', true)
+insert into servicio(name, state) values('UCI', false)
+insert into servicio(name, state) values('UROLOGIA', false)
 
 -- NEONATOLOGÍA
 
 insert into servicio(name, state) values('SERVICIO', true)
 insert into servicio(name, state) values('ALOJA', true)
-insert into servicio(name, state) values('ARO', true)
+insert into servicio(name, state) values('ARO', false)
 insert into servicio(name, state) values('ARO - HNGAI', true)
 insert into servicio(name, state) values('ATEN_INMED', true)
 insert into servicio(name, state) values('ATEN_INMED HNGAI', true)
 insert into servicio(name, state) values('ATENCION', true)
 insert into servicio(name, state) values('BIOING HNGAI', true)
-insert into servicio(name, state) values('BIOINGENIERIA', true)
+insert into servicio(name, state) values('BIOINGENIERIA', false)
 insert into servicio(name, state) values('CARDIO INCOR', true)
 insert into servicio(name, state) values('CARDIO INMP', true)
 insert into servicio(name, state) values('CIRUGIA PEDIATRICA INMP', true)
@@ -426,10 +425,10 @@ insert into servicio(name, state) values('INVESTIG. HNGAI', true)
 insert into servicio(name, state) values('NEUROLOGIA PEDIATRICA INMP', true)
 insert into servicio(name, state) values('NEUROP INMP', true)
 insert into servicio(name, state) values('QX PED INMP', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
 insert into servicio(name, state) values('SEGUIM', true)
 insert into servicio(name, state) values('SEGUIM REHABIL.', true)
-insert into servicio(name, state) values('UCI', true)
+insert into servicio(name, state) values('UCI', false)
 insert into servicio(name, state) values('UCI HNGAI', true)
 insert into servicio(name, state) values('UCI INMP', true)
 insert into servicio(name, state) values('UCIN I', true)
@@ -440,46 +439,46 @@ insert into servicio(name, state) values('VENTI INMP', true)
 -- NEUMONOLOGÍA
 
 insert into servicio(name, state) values('ANATO_PATO (Patologia Qx. Necropsias)', true)
-insert into servicio(name, state) values('ANESTESIO', true)
-insert into servicio(name, state) values('CARDIOLOGIA', true)
+insert into servicio(name, state) values('ANESTESIO', false)
+insert into servicio(name, state) values('CARDIOLOGIA', false)
 insert into servicio(name, state) values('CIRUGIA DE TORAX', true)
 insert into servicio(name, state) values('INFECTO', true)
 insert into servicio(name, state) values('INMUNOLOGIA CLINICA', true)
 insert into servicio(name, state) values('MED_INT 2', true)
 insert into servicio(name, state) values('MEDICINA INTERNA 1 - INFECTOLOGIA', true)
-insert into servicio(name, state) values('NEUMOLOGIA', true)
+insert into servicio(name, state) values('NEUMOLOGIA', false)
 insert into servicio(name, state) values('NEUMOLOGIA INSN', true)
 insert into servicio(name, state) values('NEUMOLOGIA PEDIATRICA', true)
 insert into servicio(name, state) values('NEUMOLOGIA PEDIATRICA INSN', true)
 insert into servicio(name, state) values('NEUMOLOGIA PEDIATRICA INSN - BREÑA', true)
-insert into servicio(name, state) values('ONCOLOGIA', true)
+insert into servicio(name, state) values('ONCOLOGIA', false)
 insert into servicio(name, state) values('PATO_QX_NECROPSIA', true)
-insert into servicio(name, state) values('RADIOLOGIA', true)
-insert into servicio(name, state) values('TAC', true)
-insert into servicio(name, state) values('UCI', true)
+insert into servicio(name, state) values('RADIOLOGIA', false)
+insert into servicio(name, state) values('TAC', false)
+insert into servicio(name, state) values('UCI', false)
 
 -- NEUROLOGÍA
 
 insert into servicio(name, state) values('ENDO', true)
-insert into servicio(name, state) values('HEMATOLOGIA', true)
+insert into servicio(name, state) values('HEMATOLOGIA', false)
 insert into servicio(name, state) values('INO', true)
 insert into servicio(name, state) values('MED. ENF. INFECC.', true)
-insert into servicio(name, state) values('MEDICINA FISICA', true)
-insert into servicio(name, state) values('MEDICINA INTERNA 1', true)
+insert into servicio(name, state) values('MEDICINA FISICA', false)
+insert into servicio(name, state) values('MEDICINA INTERNA 1', false)
 insert into servicio(name, state) values('NC', true)
 insert into servicio(name, state) values('NEURO OFTALMO INCN', true)
 insert into servicio(name, state) values('NEUROFISIOLOGIA', true)
-insert into servicio(name, state) values('NEUROLOGIA', true)
+insert into servicio(name, state) values('NEUROLOGIA', false)
 insert into servicio(name, state) values('NEUROPEDIATRIA', true)
 insert into servicio(name, state) values('NEUROPSICOLOGIA', true)
 insert into servicio(name, state) values('PSIQUIATRIA', true)
 insert into servicio(name, state) values('RESONANCIA MAGNETICA', true)
-insert into servicio(name, state) values('TAC', true)
+insert into servicio(name, state) values('TAC', false)
 insert into servicio(name, state) values('UCI ***', true)
 
 -- PATOLOGÍA CLINICA
 
-insert into servicio(name, state) values('BANCO DE SANGRE', true)
+insert into servicio(name, state) values('BANCO DE SANGRE', false)
 insert into servicio(name, state) values('BANCO DE SANGRE Y HEMOTERAPIA', true)
 insert into servicio(name, state) values('BIOLOGIA MOLECULAR', true)
 insert into servicio(name, state) values('BIOQUIMICA', true)
@@ -489,7 +488,7 @@ insert into servicio(name, state) values('CITOMETRIA', true)
 insert into servicio(name, state) values('CITOMETRIA DE FLUJO - INEN', true)
 insert into servicio(name, state) values('HEMATO ESPECIAL', true)
 insert into servicio(name, state) values('HEMATO ESPECIAL (TROMBOSIS) - HNGAI', true)
-insert into servicio(name, state) values('HEMATOLOGIA', true)
+insert into servicio(name, state) values('HEMATOLOGIA', false)
 insert into servicio(name, state) values('HEMATOLOGIA HEMOSTASIA', true)
 insert into servicio(name, state) values('HISTOCOMPATIBILIDAD HNERM', true)
 insert into servicio(name, state) values('HLA', true)
@@ -498,9 +497,9 @@ insert into servicio(name, state) values('INCOR', true)
 insert into servicio(name, state) values('INMUNOLOGIA', true)
 insert into servicio(name, state) values('MEDICINA TRANSFUCIONAL', true)
 insert into servicio(name, state) values('MICRO ESPECIAL', true)
-insert into servicio(name, state) values('MICROBIOLOGIA', true)
+insert into servicio(name, state) values('MICROBIOLOGIA', false)
 insert into servicio(name, state) values('MICROBIOLOGIA INSN - BREÑA', true)
-insert into servicio(name, state) values('ROTACION EXTERNA', true)
+insert into servicio(name, state) values('ROTACION EXTERNA', false)
 insert into servicio(name, state) values('TOXICO', true)
 insert into servicio(name, state) values('VIROLOGIA - INS', true)
 
@@ -514,10 +513,10 @@ insert into servicio(name, state) values('CENTRO DE SALUD', true)
 insert into servicio(name, state) values('CLINICA PEDIATRICA', true)
 insert into servicio(name, state) values('CLINICA PEDIATRICA HNGAI', true)
 insert into servicio(name, state) values('CRED', true)
-insert into servicio(name, state) values('DERMATOL', true)
-insert into servicio(name, state) values('DERMATOLOGIA HNGAI', true)
+insert into servicio(name, state) values('DERMATOL', false)
+insert into servicio(name, state) values('DERMATOLOGIA HNGAI', false)
 insert into servicio(name, state) values('DERMATOLOGIA INSN - BREÑA', true)
-insert into servicio(name, state) values('ENDOCRINOL', true)
+insert into servicio(name, state) values('ENDOCRINOL', false)
 insert into servicio(name, state) values('GASTRO HNSBARTOLOME', true)
 insert into servicio(name, state) values('GASTRO INSN - BREÑA', true)
 insert into servicio(name, state) values('GASTROENTEROLOGIA HNERM', true)
@@ -525,10 +524,10 @@ insert into servicio(name, state) values('HEMATOLOG', true)
 insert into servicio(name, state) values('HEMATOLOGIA HNERM', true)
 insert into servicio(name, state) values('INFECTOLOGIA INSN-BREÑA', true)
 insert into servicio(name, state) values('MEDICINA ADOLESCENTE', true)
-insert into servicio(name, state) values('MEDICINA FISICA', true)
+insert into servicio(name, state) values('MEDICINA FISICA', false)
 insert into servicio(name, state) values('MEDICINA FISICA - HNGAI', true)
 insert into servicio(name, state) values('NEFROLOGIA HNGAI', true)
-insert into servicio(name, state) values('NEONATOLOGIA', true)
+insert into servicio(name, state) values('NEONATOLOGIA', false)
 insert into servicio(name, state) values('NEONATOLOGIA HNGAI', true)
 insert into servicio(name, state) values('NEUMOLOGIA HNSBARTOLOME', true)
 insert into servicio(name, state) values('NEUMOLOGIA INSN - BREÑA', true)
@@ -545,7 +544,7 @@ insert into servicio(name, state) values('PSIQUIATRIAHNGAI', true)
 insert into servicio(name, state) values('PSIQUIATRIA INFANTO HNGAI', true)
 insert into servicio(name, state) values('PSIQUIATRIA INFANTO JUVENIL - HNGAI', true)
 insert into servicio(name, state) values('RADIOLOGIA INSN-BREÑA', true)
-insert into servicio(name, state) values('RX', true)
+insert into servicio(name, state) values('RX', false)
 insert into servicio(name, state) values('SALUD MENTAL', true)
 insert into servicio(name, state) values('SALUD MENTAL - HNGAI', true)
 insert into servicio(name, state) values('TELEMEDICINA INSN - SAN BORJA', true)
@@ -568,19 +567,19 @@ insert into servicio(name, state) values('MAMOGRAFIA CLINICA ALIADA', true)
 insert into servicio(name, state) values('MAMOGRAFIA ONCOSALUD', true)
 insert into servicio(name, state) values('MED_NUCLEAR', true)
 insert into servicio(name, state) values('RAD_INTERVN', true)
-insert into servicio(name, state) values('RADIOLOGIA GENERAL', true)
+insert into servicio(name, state) values('RADIOLOGIA GENERAL', false)
 insert into servicio(name, state) values('RADIOLOGIA INSN', true)
 insert into servicio(name, state) values('RADIOLOGIA PEDIATRICA INSN', true)
 insert into servicio(name, state) values('RES_MAGNETICA ONCOSALUD', true)
 insert into servicio(name, state) values('RESONANCIA (HNGAI)', true)
-insert into servicio(name, state) values('RX ', true)
+insert into servicio(name, state) values('RX ', false)
 insert into servicio(name, state) values('RX_ INTERVEN', true)
 insert into servicio(name, state) values('RX_GENERAL', true)
 insert into servicio(name, state) values('RX_GINECO', true)
 insert into servicio(name, state) values('RX_PEDIATRICA', true)
 insert into servicio(name, state) values('RX_PEDIATRICA (INSN)', true)
 insert into servicio(name, state) values('TAC CONSOLA', true)
-insert into servicio(name, state) values('TOMOGRAFIA', true)
+insert into servicio(name, state) values('TOMOGRAFIA', false)
 insert into servicio(name, state) values('TOMOGRAFICA COMPU', true)
 
 -- UROLOGIA
@@ -590,12 +589,12 @@ insert into servicio(name, state) values('CIRUGIA DE COLON', true)
 insert into servicio(name, state) values('CIRUGIA DE COLOPROCTOLOGIA', true)
 insert into servicio(name, state) values('CIRUGIA DE ESOFAGO Y ESTOMAGO', true)
 insert into servicio(name, state) values('COLOPROCTOLOGIA', true)
-insert into servicio(name, state) values('GINECOLOGIA', true)
-insert into servicio(name, state) values('NEFROLOGIA', true)
+insert into servicio(name, state) values('GINECOLOGIA', false)
+insert into servicio(name, state) values('NEFROLOGIA', false)
 insert into servicio(name, state) values('ONCOLOGIA UROLOGIA', true)
-insert into servicio(name, state) values('TRASPLANTE RENAL', true)
+insert into servicio(name, state) values('TRASPLANTE RENAL', false)
 insert into servicio(name, state) values('UROL_PEDIATRICA', true)
-insert into servicio(name, state) values('UROLOGIA', true)
+insert into servicio(name, state) values('UROLOGIA', false)
 
 -- ////////////////////////////////////////////////////////////////////////////
 -- ESPECILIDAD DE SERVICIOS
@@ -1572,1479 +1571,1475 @@ insert into servicio_doctor_anio_academico_delegados(anio_academico_delegados_id
 insert into servicio_doctor_anio_academico_delegados(anio_academico_delegados_id, servicio_doctor_id) values (11,4)
 insert into servicio_doctor_anio_academico_delegados(anio_academico_delegados_id, servicio_doctor_id) values (12,4)
 
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	5	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	6	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	7	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	8	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	9	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	10	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	1	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	2	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	3	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	4	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	7	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	8	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	9	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	10	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	1	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	2	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	3	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	4	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	5	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	6	,	1	,2020	);
 
 
 
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	5	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	6	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	7	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	8	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	9	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	10	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	1	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	2	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	3	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	4	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	6	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	7	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	8	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	9	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	10	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	1	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	2	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	3	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	4	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	5	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	6	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	4	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	5	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	6	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	7	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	8	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	9	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	10	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	1	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	2	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	3	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	5	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	6	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	7	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	8	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	9	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	10	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	1	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	2	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	3	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	4	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	5	,	2	,2020	);
+
+
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	15	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	16	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	17	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	18	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	19	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	20	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	11	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	12	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	13	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	14	,	1	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	16	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	17	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	18	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	19	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	20	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	11	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	12	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	13	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	14	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	15	,	1	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	16	,	1	,2020	);
 
 
 
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	4	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	5	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	6	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	7	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	8	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	9	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	10	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	1	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	2	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	3	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	5	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	6	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	7	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	8	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	9	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	10	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	1	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	2	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	3	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	4	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	5	,	2	,2020	);
-
-
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	15	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	16	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	17	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	18	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	19	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	20	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	11	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	12	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	13	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	14	,	1	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	16	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	17	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	18	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	19	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	20	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	11	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	12	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	13	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	14	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	15	,	1	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	16	,	1	,2020	);
-
-
-
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	17	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	18	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	19	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	20	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	11	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	12	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	13	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	14	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	15	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	16	,	2	,2019	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	18	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	19	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	20	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	11	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	12	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	13	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	14	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	15	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	16	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	17	,	2	,2020	);
-insert into MES_DIA (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	18	,	2	,2020	);
-
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	7	,'L','Julio',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	7	,'M','Julio',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	7	,'M','Julio',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	7	,'J','Julio',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	7	,'V','Julio',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	7	,'S','Julio',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	7	,'D','Julio',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	7	,'L','Julio',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	7	,'M','Julio',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	7	,'M','Julio',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	7	,'J','Julio',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	7	,'V','Julio',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	7	,'S','Julio',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	7	,'D','Julio',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	7	,'L','Julio',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	7	,'M','Julio',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	7	,'M','Julio',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	7	,'J','Julio',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	7	,'V','Julio',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	7	,'S','Julio',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	7	,'D','Julio',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	7	,'L','Julio',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	7	,'M','Julio',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	7	,'M','Julio',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	7	,'J','Julio',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	7	,'V','Julio',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	7	,'S','Julio',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	7	,'D','Julio',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	7	,'L','Julio',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	7	,'M','Julio',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	7	,'M','Julio',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	8	,'J','Agosto',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	8	,'V','Agosto',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	8	,'S','Agosto',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	8	,'D','Agosto',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	8	,'L','Agosto',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	8	,'M','Agosto',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	8	,'M','Agosto',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	8	,'J','Agosto',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	8	,'V','Agosto',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	8	,'S','Agosto',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	8	,'D','Agosto',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	8	,'L','Agosto',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	8	,'M','Agosto',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	8	,'M','Agosto',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	8	,'J','Agosto',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	8	,'V','Agosto',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	8	,'S','Agosto',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	8	,'D','Agosto',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	8	,'L','Agosto',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	8	,'M','Agosto',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	8	,'M','Agosto',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	8	,'J','Agosto',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	8	,'V','Agosto',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	8	,'S','Agosto',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	8	,'D','Agosto',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	8	,'L','Agosto',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	8	,'M','Agosto',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	8	,'M','Agosto',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	8	,'J','Agosto',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	8	,'V','Agosto',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	8	,'S','Agosto',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	9	,'D','Septiembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	9	,'L','Septiembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	9	,'M','Septiembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	9	,'M','Septiembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	9	,'J','Septiembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	9	,'V','Septiembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	9	,'S','Septiembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	9	,'D','Septiembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	9	,'L','Septiembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	9	,'M','Septiembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	9	,'M','Septiembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	9	,'J','Septiembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	9	,'V','Septiembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	9	,'S','Septiembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	9	,'D','Septiembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	9	,'L','Septiembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	9	,'M','Septiembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	9	,'M','Septiembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	9	,'J','Septiembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	9	,'V','Septiembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	9	,'S','Septiembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	9	,'D','Septiembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	9	,'L','Septiembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	9	,'M','Septiembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	9	,'M','Septiembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	9	,'J','Septiembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	9	,'V','Septiembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	9	,'S','Septiembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	9	,'D','Septiembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	9	,'L','Septiembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	10	,'M','Octubre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	10	,'M','Octubre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	10	,'J','Octubre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	10	,'V','Octubre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	10	,'S','Octubre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	10	,'D','Octubre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	10	,'L','Octubre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	10	,'M','Octubre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	10	,'M','Octubre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	10	,'J','Octubre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	10	,'V','Octubre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	10	,'S','Octubre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	10	,'D','Octubre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	10	,'L','Octubre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	10	,'M','Octubre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	10	,'M','Octubre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	10	,'J','Octubre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	10	,'V','Octubre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	10	,'S','Octubre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	10	,'D','Octubre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	10	,'L','Octubre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	10	,'M','Octubre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	10	,'M','Octubre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	10	,'J','Octubre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	10	,'V','Octubre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	10	,'S','Octubre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	10	,'D','Octubre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	10	,'L','Octubre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	10	,'M','Octubre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	10	,'M','Octubre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	10	,'J','Octubre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	11	,'V','Noviembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	11	,'S','Noviembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	11	,'D','Noviembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	11	,'L','Noviembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	11	,'M','Noviembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	11	,'M','Noviembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	11	,'J','Noviembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	11	,'V','Noviembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	11	,'S','Noviembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	11	,'D','Noviembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	11	,'L','Noviembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	11	,'M','Noviembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	11	,'M','Noviembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	11	,'J','Noviembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	11	,'V','Noviembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	11	,'S','Noviembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	11	,'D','Noviembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	11	,'L','Noviembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	11	,'M','Noviembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	11	,'M','Noviembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	11	,'J','Noviembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	11	,'V','Noviembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	11	,'S','Noviembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	11	,'D','Noviembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	11	,'L','Noviembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	11	,'M','Noviembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	11	,'M','Noviembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	11	,'J','Noviembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	11	,'V','Noviembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	11	,'S','Noviembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	12	,'D','Diciembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	12	,'L','Diciembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	12	,'M','Diciembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	12	,'M','Diciembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	12	,'J','Diciembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	12	,'V','Diciembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	12	,'S','Diciembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	12	,'D','Diciembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	12	,'L','Diciembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	12	,'M','Diciembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	12	,'M','Diciembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	12	,'J','Diciembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	12	,'V','Diciembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	12	,'S','Diciembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	12	,'D','Diciembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	12	,'L','Diciembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	12	,'M','Diciembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	12	,'M','Diciembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	12	,'J','Diciembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	12	,'V','Diciembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	12	,'S','Diciembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	12	,'D','Diciembre',	1	,	17	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	12	,'L','Diciembre',	1	,	18	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	12	,'M','Diciembre',	1	,	19	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	12	,'M','Diciembre',	1	,	20	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	12	,'J','Diciembre',	1	,	11	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	12	,'V','Diciembre',	1	,	12	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	12	,'S','Diciembre',	1	,	13	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	12	,'D','Diciembre',	1	,	14	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	12	,'L','Diciembre',	1	,	15	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	12	,'M','Diciembre',	1	,	16	,	2	,2019	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	1	,'M','Enero',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	1	,'J','Enero',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	1	,'V','Enero',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	1	,'S','Enero',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	1	,'D','Enero',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	1	,'L','Enero',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	1	,'M','Enero',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	1	,'M','Enero',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	1	,'J','Enero',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	1	,'V','Enero',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	1	,'S','Enero',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	1	,'D','Enero',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	1	,'L','Enero',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	1	,'M','Enero',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	1	,'M','Enero',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	1	,'J','Enero',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	1	,'V','Enero',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	1	,'S','Enero',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	1	,'D','Enero',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	1	,'L','Enero',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	1	,'M','Enero',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	1	,'M','Enero',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	1	,'J','Enero',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	1	,'V','Enero',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	1	,'S','Enero',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	1	,'D','Enero',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	1	,'L','Enero',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	1	,'M','Enero',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	1	,'M','Enero',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	1	,'J','Enero',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	1	,'V','Enero',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	2	,'S','Febrero',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	2	,'D','Febrero',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	2	,'L','Febrero',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	2	,'M','Febrero',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	2	,'M','Febrero',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	2	,'J','Febrero',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	2	,'V','Febrero',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	2	,'S','Febrero',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	2	,'D','Febrero',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	2	,'L','Febrero',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	2	,'M','Febrero',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	2	,'M','Febrero',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	2	,'J','Febrero',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	2	,'V','Febrero',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	2	,'S','Febrero',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	2	,'D','Febrero',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	2	,'L','Febrero',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	2	,'M','Febrero',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	2	,'M','Febrero',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	2	,'J','Febrero',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	2	,'V','Febrero',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	2	,'S','Febrero',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	2	,'D','Febrero',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	2	,'L','Febrero',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	2	,'M','Febrero',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	2	,'M','Febrero',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	2	,'J','Febrero',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	2	,'V','Febrero',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	2	,'S','Febrero',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	3	,'D','Marzo',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	3	,'L','Marzo',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	3	,'M','Marzo',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	3	,'M','Marzo',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	3	,'J','Marzo',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	3	,'V','Marzo',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	3	,'S','Marzo',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	3	,'D','Marzo',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	3	,'L','Marzo',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	3	,'M','Marzo',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	3	,'M','Marzo',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	3	,'J','Marzo',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	3	,'V','Marzo',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	3	,'S','Marzo',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	3	,'D','Marzo',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	3	,'L','Marzo',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	3	,'M','Marzo',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	3	,'M','Marzo',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	3	,'J','Marzo',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	3	,'V','Marzo',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	3	,'S','Marzo',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	3	,'D','Marzo',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	3	,'L','Marzo',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	3	,'M','Marzo',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	3	,'M','Marzo',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	3	,'J','Marzo',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	3	,'V','Marzo',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	3	,'S','Marzo',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	3	,'D','Marzo',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	3	,'L','Marzo',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	3	,'M','Marzo',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	4	,'M','Abril',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	4	,'J','Abril',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	4	,'V','Abril',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	4	,'S','Abril',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	4	,'D','Abril',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	4	,'L','Abril',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	4	,'M','Abril',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	4	,'M','Abril',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	4	,'J','Abril',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	4	,'V','Abril',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	4	,'S','Abril',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	4	,'D','Abril',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	4	,'L','Abril',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	4	,'M','Abril',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	4	,'M','Abril',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	4	,'J','Abril',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	4	,'V','Abril',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	4	,'S','Abril',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	4	,'D','Abril',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	4	,'L','Abril',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	4	,'M','Abril',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	4	,'M','Abril',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	4	,'J','Abril',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	4	,'V','Abril',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	4	,'S','Abril',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	4	,'D','Abril',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	4	,'L','Abril',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	4	,'M','Abril',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	4	,'M','Abril',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	4	,'J','Abril',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	5	,'V','Mayo',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	5	,'S','Mayo',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	5	,'D','Mayo',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	5	,'L','Mayo',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	5	,'M','Mayo',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	5	,'M','Mayo',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	5	,'J','Mayo',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	5	,'V','Mayo',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	5	,'S','Mayo',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	5	,'D','Mayo',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	5	,'L','Mayo',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	5	,'M','Mayo',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	5	,'M','Mayo',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	5	,'J','Mayo',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	5	,'V','Mayo',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	5	,'S','Mayo',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	5	,'D','Mayo',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	5	,'L','Mayo',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	5	,'M','Mayo',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	5	,'M','Mayo',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	5	,'J','Mayo',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	5	,'V','Mayo',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	5	,'S','Mayo',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	5	,'D','Mayo',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	5	,'L','Mayo',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	5	,'M','Mayo',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	5	,'M','Mayo',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	5	,'J','Mayo',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	5	,'V','Mayo',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	5	,'S','Mayo',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	31	,	5	,'D','Mayo',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	1	,	6	,'L','Junio',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	2	,	6	,'M','Junio',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	3	,	6	,'M','Junio',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	4	,	6	,'J','Junio',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	5	,	6	,'V','Junio',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	6	,	6	,'S','Junio',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	7	,	6	,'D','Junio',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	8	,	6	,'L','Junio',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	9	,	6	,'M','Junio',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	10	,	6	,'M','Junio',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	11	,	6	,'J','Junio',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	12	,	6	,'V','Junio',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	13	,	6	,'S','Junio',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	14	,	6	,'D','Junio',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	15	,	6	,'L','Junio',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	16	,	6	,'M','Junio',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	17	,	6	,'M','Junio',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	18	,	6	,'J','Junio',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	19	,	6	,'V','Junio',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	20	,	6	,'S','Junio',	1	,	18	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	21	,	6	,'D','Junio',	1	,	19	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	22	,	6	,'L','Junio',	1	,	20	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	23	,	6	,'M','Junio',	1	,	11	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	24	,	6	,'M','Junio',	1	,	12	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	25	,	6	,'J','Junio',	1	,	13	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	26	,	6	,'V','Junio',	1	,	14	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	27	,	6	,'S','Junio',	1	,	15	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	28	,	6	,'D','Junio',	1	,	16	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	29	,	6	,'L','Junio',	1	,	17	,	2	,2020	);
+insert into mes_dia (ID_DIA,ID_MES,NOMBRE_DIA,NOMBRE_MES,ANIO_ACADEMICO_ID,TEAM_ID,TIPOS_GUARDIA_ID,anio) values (	30	,	6	,'M','Junio',	1	,	18	,	2	,2020	);

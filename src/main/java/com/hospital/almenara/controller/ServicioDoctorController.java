@@ -21,18 +21,19 @@ public class ServicioDoctorController
     ServicioDoctorService service;
 
     @GetMapping
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public List<ServicioDoctor> find(){
         return service.findAll();
     }
 
     @GetMapping("/{idSpecialty}")
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public List<ServicioDoctor> find(@PathVariable Long idSpecialty){
         return service.findAllBySpecialty(idSpecialty);
     }
 
     @GetMapping("/report/{idServicio}/{idAnio}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public List<ServicioDoctor> findByServicioAndAnioAndMes(@PathVariable Long idServicio, @PathVariable Long idAnio)
     {
         return service.findAllByServiceIdAndPeriod(idServicio, idAnio);
@@ -45,7 +46,9 @@ public class ServicioDoctorController
 //    }
 
     @GetMapping("/pdf")
-    public ResponseEntity<byte[]> getListServicioDoctorPdf() {
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
+    public ResponseEntity<byte[]> getListServicioDoctorPdf()
+    {
         byte[] contents = service.getListServicioDoctorsPdf().toByteArray();
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.parseMediaType("application/pdf"));
@@ -56,6 +59,7 @@ public class ServicioDoctorController
     }
 
     @GetMapping("/pdf/{idSpacialty}")
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public ResponseEntity<byte[]> getListServicioDoctorsPdfByIdSpecialty(@PathVariable Long idSpacialty)
     {
         byte[] contents = service.getListServicioDoctorsPdfByIdSpecialty(idSpacialty).toByteArray();
@@ -68,7 +72,7 @@ public class ServicioDoctorController
     }
 
     @GetMapping("/pdf/medicos-residentes-otras-especialidades-por-periodo/{idServicio}/{idAnio}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN') OR hasRole('USER')")
     public ResponseEntity<byte[]> getListServicioDoctorPdfByServicioAndAnioAndMes(@PathVariable Long idServicio, @PathVariable Long idAnio)
     {
         byte[] contents = service.getListServicioDoctorPdfByServicioAndAnioAndMes(idServicio, idAnio).toByteArray();
