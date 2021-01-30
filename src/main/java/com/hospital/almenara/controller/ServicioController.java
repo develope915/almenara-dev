@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
 @RestController
@@ -22,6 +23,13 @@ public class ServicioController
     public List<Servicio> findAll()
     {
         return service.findAll();
+    }
+
+    @GetMapping("/serviceWithSpecialityName")
+    public List<Servicio> findAllServicesWithpecialityNames()
+    {
+        List<Servicio> servicios = service.findAllServicesWithSpecialityName();
+        return servicios;
     }
 
     @GetMapping("/active/{specialityId}")

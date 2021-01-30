@@ -16,9 +16,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
 import java.util.*;
 
-@CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
+//@CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
+@CrossOrigin
 @RestController
 @RequestMapping("/mesdia")
 public class MesDiaController {
@@ -187,8 +189,6 @@ public class MesDiaController {
         return ResponseEntity.status(HttpStatus.CREATED).body(lstMesDto);
     }
 
-
-
     @PutMapping("actualizar/{idmesdia}/{grupo}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<MesDia> actualizar(@PathVariable Long idmesdia, @PathVariable Long grupo){
@@ -207,8 +207,6 @@ public class MesDiaController {
             aux = service.validar(mesdia);
         }
 
-
-
         if(aux != null){
             return ResponseEntity.status(HttpStatus.CREATED).body(aux);
         }else if(aux2 != null){
@@ -219,7 +217,6 @@ public class MesDiaController {
 
         return ResponseEntity.status(HttpStatus.CREATED).body(service.update(mesdia, idmesdia));
     }
-
 
 
 
@@ -234,8 +231,14 @@ public class MesDiaController {
         return new ResponseEntity<>(contents, headers, HttpStatus.OK);
     }
 
-
-
-
-
+    @PostMapping("/generate-mes-dia")
+    @PreAuthorize("hasRole('ADMIN')")
+    public void generateMesDiaForServices()
+    {
+        try {
+            service.generateMesDiaForServices();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
 }

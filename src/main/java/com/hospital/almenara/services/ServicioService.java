@@ -21,6 +21,9 @@ public class ServicioService {
     @Autowired
     SpecialtyRepository specialtyRepository;
 
+    @Autowired
+    SpecialtyService specialtyService;
+
     public List<Servicio> findAll()
     {
         return repository.findAll().stream().sorted(Comparator.comparing(Servicio::getName)).collect(Collectors.toList());
@@ -77,5 +80,19 @@ public class ServicioService {
         specialtyRepository.save(specialtyToRemove);
 
         return servicioToRemove;
+    }
+
+    public List<Servicio> findAllServicesWithSpecialityName()
+    {
+        List<Servicio> servicios =
+            repository.findAll().stream()
+                         .map(servicio -> { servicio.setName(servicio.getName() /*+ " ("+ specialtyService.getNameByService(servicio) +")"*/);
+            return servicio;
+        })
+        .filter(servicio -> servicio.isState() == true)
+        .sorted(Comparator.comparing(Servicio::getName))
+        .collect(Collectors.toList());
+        //return repository.findAll().stream().filter(servicio -> servicio.isState() == true  ).collect(Collectors.toList());
+        return servicios;
     }
 }

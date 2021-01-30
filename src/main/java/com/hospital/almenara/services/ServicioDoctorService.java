@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -52,40 +53,59 @@ public class ServicioDoctorService {
 
     public List<ServicioDoctor> findAllByServiceIdAndPeriod(Long idService, Long anioAcademicoId)
     {
-        return findAll().stream()
-                        .filter(servicioDoctor -> servicioDoctor
-                                        .getAnioAcademicoDelegados()
-                                        .stream()
-                                        .filter(anioAcademicoDelegado   -> {
-                                            if(anioAcademicoDelegado.getAnioAcademico().getId().equals(anioAcademicoId))
-                                                return true;
-                                            else
+        try
+        {
+            List<ServicioDoctor> servicioDoctorList = findAll();
+            if(servicioDoctorList != null) {
+                return servicioDoctorList.stream()
+                        .filter(servicioDoctor -> servicioDoctor.getAnioAcademicoDelegados()
+                                .stream()
+                                .filter(anioAcademicoDelegado -> {
+                                    if (anioAcademicoDelegado.getAnioAcademico().getId().equals(anioAcademicoId))
+                                        return true;
+                                    else
+                                        return false;
+                                })
+                                .peek(anioAcademicoDelegad -> log.info(servicioDoctor.getDoctor()))
+                                .peek(anioAcademicoDelegad2 -> log.info(anioAcademicoDelegad2.getServicioDelegados()))
+                                .filter(anioAcademicoDelegad -> {
+                                    if (anioAcademicoDelegad.getServicioDelegados()
+                                            .stream()
+                                            .anyMatch(servicioDelegado ->{
+                                                if( servicioDelegado.getServicio() != null && servicioDelegado.getId() != null)
+                                                {
+                                                    if( servicioDelegado.getServicio().getId().equals(idService))
+                                                    {
+                                                        return true;
+                                                    }
+                                                }
                                                 return false;
-                                        })
-                                        .peek(anioAcademicoDelegad -> log.info(anioAcademicoDelegad))
-                                        .filter(anioAcademicoDelegad -> {
-                                            if(anioAcademicoDelegad.getServicioDelegados()
-                                                    .stream()
-                                                    .anyMatch(servicioDelegado -> servicioDelegado.getServicio().getId() == idService))
-                                                return true;
-                                            else
-                                                return false;
-                                        })
-                        .count() > 0L)
+                                            }))
+                                        return true;
+                                    else
+                                        return false;
+                                })
+                                .count() > 0L)
                         .map(servDoctor -> {
                                     servDoctor.setAnioAcademicoDelegados
                                             (servDoctor.getAnioAcademicoDelegados()
                                                     .stream()
-                                                    .filter(anioAcademicoDele -> anioAcademicoDele.getAnioAcademico().getId() == anioAcademicoId)
+                                                    .filter(anioAcademicoDele -> anioAcademicoDele.getAnioAcademico().getId().equals(anioAcademicoId))
                                                     .collect(Collectors.toList()));
 
                                     return servDoctor;
                                 }
                         )
                         .collect(Collectors.toList());
-
-
-
+            } else
+            {
+                return new ArrayList<>();
+            }
+        }
+        catch (Exception e)
+        {
+            return new ArrayList<>();
+        }
     }
 
     public ByteArrayOutputStream getListServicioDoctorPdfByServicioAndAnioAndMes(Long idServicio, Long idAnio)

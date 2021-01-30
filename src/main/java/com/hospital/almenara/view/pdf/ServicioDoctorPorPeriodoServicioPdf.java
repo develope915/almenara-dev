@@ -171,8 +171,19 @@ public class ServicioDoctorPorPeriodoServicioPdf {
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                     cell.setRowspan(3);
                     table.addCell(cell);
-                    for (ServicioDelegado servicioDelegado: anioAcademico.getServicioDelegados()) {
-                        cell = new PdfPCell(new Phrase(servicioDelegado.getServicio().getId().equals(serviceId) ? "1" : "", cellFont));
+                    for (ServicioDelegado servicioDelegado : anioAcademico.getServicioDelegados()) {
+                        String cellValue = "";
+
+                        if(servicioDelegado != null && servicioDelegado.getServicio() != null)
+                        {
+                            cellValue  =  servicioDelegado.getServicio().getId().equals(serviceId) ? "1" : "";
+                        } else
+                        {
+                            cellValue  =  "";
+                        }
+
+
+                        cell = new PdfPCell(new Phrase( cellValue, cellFont));
                         cell.setVerticalAlignment(Element.ALIGN_CENTER);
                         cell.setHorizontalAlignment(Element.ALIGN_CENTER);
                         cell.setRowspan(3);

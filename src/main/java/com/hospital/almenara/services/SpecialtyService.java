@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -49,6 +50,22 @@ public class SpecialtyService {
     public Specialty create(Specialty servicio)
     {
         return repository.save(servicio);
+    }
+
+    public String getNameByService(Servicio servicio)
+    {
+        Optional<Specialty> foundSpecialty = findAll().stream()
+                                                 .filter(specialty -> specialty.getServicios().contains(servicio))
+                                                 .findFirst();
+
+        if (foundSpecialty.isPresent())
+        {
+            return foundSpecialty.get().getName();
+        }
+        else
+        {
+            return "Especialidad no encontrada";
+        }
     }
 
 
