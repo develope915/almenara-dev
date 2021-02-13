@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app","https://hopeful-euclid-8ea55a.netlify.app"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://frosty-bohr-e33186.netlify.app"})
 @RestController
 @RequestMapping("/user")
 public class UserController
